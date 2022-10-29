@@ -1,3 +1,8 @@
+@font-face{
+    font-family: Pacifico-Regular;
+    src: url("Pacifico-Regular.ttf");
+}
+
 .principal body{
     margin: auto;
     width: 960px;
@@ -30,9 +35,8 @@
 
 .nav img{
     padding-top: 8px;
-    width: 70px;
+    width: 100px;
     height: 50px;
-    border-radius: 50%;
 }
 
 .cowbow img{
@@ -51,9 +55,20 @@
 .image img{
         margin-top: 18px;
         padding-top: 8px;
-        width: 140px;
+        width: 200px;
         height: 100px;
-        border-radius: 50%;
+}
+
+.carousel-inner h2{
+    margin-bottom: 2px;
+    font-size: 3rem;
+}
+
+.carousel-inner p{
+    margin-bottom: 88px;
+    font-size: 3rem;
+    font-family: Pacifico-Regular;
+    color: #95d654;
 }
 
 .sales{
@@ -65,7 +80,6 @@
 .card-body{
     padding: 12px;
     width: 210px;
-    
     text-align: center;
     color: #192f1b;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
@@ -109,7 +123,6 @@
     flex-direction:row;
     justify-content:space-around;
     padding: 70px;
-    
 }
 
 .map h5{
@@ -127,6 +140,35 @@
     text-align: center;
     background-color: #b69492;
     padding: 10px;
+}
+
+#buttonC{
+    background-color: #01f816;
+    height: 50px;
+    width: 50px;
+    margin-top: 250px;
+    border-radius: 100%;
+    margin-left: 5px;
+}
+
+#buttonC:hover{
+    background-color: #01f81621;
+    transition: 3ms;
+}
+
+#buttonC2{
+    background-color: #01f816;
+    height: 50px;
+    width: 50px;
+    margin-top: 250px;
+    margin-right: 6px;
+    border-radius: 100%;
+    margin-left: 5px;
+}
+
+#buttonC2:hover{
+    background-color: #01f81621;
+    transition: 3ms;
 }
 
 #button{
