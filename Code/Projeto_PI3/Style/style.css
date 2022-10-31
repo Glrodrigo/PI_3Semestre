@@ -25,12 +25,16 @@
     margin: 10px;
     padding: 5px;
     padding-right: 15px;
-    color:#e0f8fc;
+    color:#95d654;
 }
 
 .principal li:hover{
-    color: white;
+    color: #e0f8fc;
     transition: 3ms;
+}
+
+.info li{
+    padding-top: 20px;
 }
 
 .nav img{
@@ -41,15 +45,14 @@
 
 .cowbow img{
     width: 245px;
-    height: 321px;
-    padding-top: 40px;
+    height: 332px;
 }
 
 .cards img{
-    width: 210px;
-    height: 180px;
-    padding-top: 20px;
-    border-color: #192f1b;
+    width: 200px;
+    height: 175px;
+    border-style:double;
+    border-color:#203b22;
 }
 
 .image img{
@@ -57,6 +60,98 @@
         padding-top: 8px;
         width: 200px;
         height: 100px;
+}
+
+.socials img{
+    width: 140px;
+    height: 40px;
+}
+
+.sales{
+    display: flex; 
+    flex-direction:row;
+    justify-content:space-between;  
+    margin-right: 30px;
+}
+
+.card-body{
+    padding: 12px;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    color: #192f1b;
+    border-style:double;
+    border-color:#203b22;
+    border-top: none;
+}
+
+.business{
+    background-color: #192f1b;
+    color: white;
+    padding-bottom: 90px;
+    padding-top: 80px;
+    padding-right: 20px;
+    margin-left: 25px;
+    text-align: center;
+    height: 332px;
+}
+
+.info-body{
+    background-color: #192f1b;
+    color:#e0f8fc;
+    font-size: 18px;
+    padding: 30px;
+    padding-left: 110px;
+    height: 520px;
+    background-image: linear-gradient(to bottom, #192f1b, #192f1b, #203b22);
+}
+
+.map{
+    background-color:#312f30;
+    display: flex; 
+    flex-direction:row;
+    justify-content: space-around;
+    padding-top: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 40px;
+}
+
+.agro{
+    border-right: solid;
+    border-color:#b69492;
+    padding-right: 50px;
+    padding-top: 15px;
+}
+
+.suport{
+    border-right: solid;
+    border-color:#b69492;
+    padding-right: 50px;
+    padding-top: 15px;
+}
+
+.principal h3{
+    padding-top: 40px;
+}
+
+.sales h4{
+    position: absolute;
+    margin: 3px;
+    padding: 5px;
+    font-size: 1rem;
+    color: #e0f8fc;
+    background-color: #95d654;
+}
+
+.info h5{
+    margin-bottom: 0px;
+    color: #95d654;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    background-color: #192f1b;
+    font-size: 2rem;
 }
 
 .carousel-inner h2{
@@ -71,58 +166,8 @@
     color: #95d654;
 }
 
-.sales{
-    display: flex; 
-    flex-direction:row;
-    justify-content:space-around;
-}
-
-.card-body{
-    padding: 12px;
-    width: 210px;
-    text-align: center;
-    color: #192f1b;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
-}
-
-.business{
-    background-color: #192f1b;
-    color: white;
-    padding-bottom: 71px;
-    margin-top: 40px;
-    padding-top: 54px;
-    padding-right: 20px;
-    text-align: center;
-}
-
-.principal h3{
-    padding-top: 35px;
-}
-
-.info h5{
-    margin-bottom: 0px;
-    color: #01f816;
-    text-align: center;
-    padding-top: 35px;
-    padding-bottom: 15px;
-    background-color: #192f1b;
-}
-
-.info-body{
-    background-color: #192f1b;
-    color: white;
-    padding: 30px;
-    padding-left: 160px;
-    height: 370px;
-    background-image: linear-gradient(to bottom, #192f1b, #192f1b, #203b22);
-}
-
-.map{
-    background-color:#312f30;
-    display: flex; 
-    flex-direction:row;
-    justify-content:space-around;
-    padding: 70px;
+.cards h5{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .map h5{
@@ -136,14 +181,37 @@
     color: #e0f8fc;
 }
 
+.map li:hover{
+    color: #b69492;
+}
+
+.cards a{
+    color:#192f1b;
+    text-decoration-line: none;
+}
+
 .centro{
     text-align: center;
     background-color: #b69492;
     padding: 10px;
 }
 
+.socials{
+    padding-left: 480px;
+    background-color: #312f30;
+    padding-bottom: 20px;
+}
+
+#box{
+    border: solid;
+    border-color: #95d654;
+    margin-top: 70px;
+    margin-left: 28px;
+    background-color: #192f1b;
+}
+
 #buttonC{
-    background-color: #01f816;
+    background-color: #95d654;
     height: 50px;
     width: 50px;
     margin-top: 250px;
@@ -157,7 +225,7 @@
 }
 
 #buttonC2{
-    background-color: #01f816;
+    background-color: #95d654;
     height: 50px;
     width: 50px;
     margin-top: 250px;
@@ -171,13 +239,29 @@
     transition: 3ms;
 }
 
+#buttonD{
+    background-color:#e0f8fc;
+    height: 20px;
+    width: 20px;
+    margin-top: 250px;
+    border-radius: 100%;
+    margin-left: 5px;
+}
+
+#buttonD:hover{
+    background-color: #01f81621;
+    transition: 3ms;
+}
+
 #button{
-    background-color: #01f816;;
-    margin-left: 350px;
+    background-color: #95d654;
+    margin-left: 370px;
+    margin-top: 20px;
     margin-bottom: 30px;
     border-radius: 12px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
     border-color: #192f1b;
 }
 
@@ -187,7 +271,7 @@
 }
 
 #button2{
-    background-color: #01f816;;
+    background-color:#95d654;
     margin-bottom: 30px;
     border-radius: 12px;
     padding-left: 20px;
@@ -201,9 +285,10 @@
 }
 
 #button3{
-    background-color: #01f816;;
-    margin-bottom: 30px;
-    border-radius: 12px;
+    background-color: #95d654;
+    margin-bottom: 26px;
+    border-radius: 18px;
+    padding: 8px;
     padding-left: 20px;
     padding-right: 20px;
     border-color: #192f1b;
@@ -215,14 +300,15 @@
 }
 
 #button4{
-    background-color: #01f816;
+    background-color: #95d654;
     margin-top: 20px;
     margin-bottom: 30px;
-    margin-left: 220px;
+    margin-left: 218px;
     border-radius: 12px;
     padding-left: 20px;
     padding-right: 20px;
     border-color: #192f1b;
+    padding: 8px;
 }
 
 #button4:hover{

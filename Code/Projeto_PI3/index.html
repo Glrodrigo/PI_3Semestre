@@ -29,9 +29,9 @@
         <section class="container">
             <section id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
                 <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button id="buttonD" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button id="buttonD" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button id="buttonD" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -45,15 +45,17 @@
                   <div class="carousel-item">
                     <img src="Images/Trigo.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5>Adquira produtos de qualidade</h5>
+                      <h2>Adquira produtos de <br> qualidade</h2>
                       <p>e aumenta a colheita de sua safra!</p>
+                      <a href="#" id="button2" class="btn btn-primary">Começar Agora</a>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img src="Images/Future.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5>Cuidando de seu presente</h5>
+                      <h2>Cuidando de seu <br> presente</h2>
                       <p>você estará cuidando de seu futuro...</p>
+                      <a href="#" id="button2" class="btn btn-primary">Começar Agora</a>
                     </div>
                   </div>
                 </div>
@@ -82,12 +84,12 @@
                     <li>Previsão de produtividade em culturas de arroz, feijão, milho, soja e trigo</li> 
                     <li>Indicamos os melhores preços para a compra de sementes em lojas confiáveis</li>
                 </ul>
-                  <a href="#" id="button" class="btn btn-primary">Leia mais</a>
+                  <a href="#" id="button" class="btn btn-primary">Fazer análise</a>
                 </div>
             </section>
             <section class="row">
                 <div class="col-lg-5 col-sm-12">
-                    <div class="row">
+                    <div id="box" class="row">
                         <div class="col-lg-6 col-sm-12">
                             <div class="cowbow">
                                 <img src="Images/Card.jpg">
@@ -101,40 +103,40 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    
+                    </div>   
                 </div>
                 <div class="col-lg-7 col-sm-12">
                     <h3>Destaques da semana</h3>
                     <div class="sales">
                         <div class="cards">
+                            <h4>7% off</h4>
                             <img src="Images/Girassol.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                               <p class="card-text">Sementes de Girassol (2,5kg)</p>
                               <h5 class="card-title">R$ 70,00</h5>
-                              <a href="#" id="button2" class="btn btn-primary" >ver mais</a>
+                              <a href="#" >Ver mais</a>
                             </div>
                         </div>
                         <div class="cards">
+                            <h4>15% off</h4>
                             <img src="Images/Cafe.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                               <p class="card-text">Sementes de Café Arábica (1,5kg)</p>
                               <h5 class="card-title">R$ 35,70</h5>
-                              <a href="#" id="button2" class="btn btn-primary" >ver mais</a>
+                              <a href="#" >Ver mais</a>
                             </div>
                         </div>
                         <div class="cards">
+                            <h4>15% off</h4>
                             <img src="Images/Milho.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                               <p class="card-text">Sementes de Milho (1,0kg)</p>
                               <h5 class="card-title">R$ 31,98</h5>
-                              <a href="#" id="button2" class="btn btn-primary" >ver mais</a>
+                              <a href="#" >Ver mais</a>
                             </div>
                         </div>
-                        
                     </div>
-                    <a href="#" id="button4" class="btn btn-primary" >Ver todos os produtos</a>
-                    
+                    <a href="#" id="button4" class="btn btn-primary" >Ver todos os produtos</a>                  
                 </div>
             </section>
             <section class="map">
@@ -160,6 +162,9 @@
                     <img src="Images/Icon.jpg">
                 </div>
             </section>
+            <div class="socials">
+                <img src="Images/Rede.jpg">
+            </div>
         </section>
     </main>
     <footer class='centro'>Copyright &copy; 2022 Development Fatec</footer>
