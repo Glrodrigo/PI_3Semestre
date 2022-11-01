@@ -18,7 +18,7 @@
         <div class="nav">
             <ul>
                 <a href="#"><li>Home</li></a>
-                <a href="#"><li>Cadastre-Se</li></a>
+                <a href="#"><li>Cadastre-se</li></a>
                 <a href="#"><li>Análise do solo</li></a>
                 <a href="#"><li>Marketplace</li></a>
                 <a href="#" id="title"><li>Quem somos</li></a>
@@ -39,7 +39,10 @@
                     <div class="carousel-caption d-none d-md-block">
                       <h2>Quer indicações de cultivo <br> para a sua terra?</h2>
                       <p>você encontra aqui</p>
-                      <a href="#" id="button2" class="btn btn-primary">Começar Agora</a>
+                      <form method="post" action="#">
+                        <input type="text" id="pitch" placeholder="Buscar produtos, serviços..." name="Search"/>
+                        <input type="submit" id="buttonP" value="Buscar"/>
+                      </form>
                     </div>
                   </div>
                   <div class="carousel-item">
@@ -47,7 +50,10 @@
                     <div class="carousel-caption d-none d-md-block">
                       <h2>Adquira produtos de <br> qualidade</h2>
                       <p>e aumenta a colheita de sua safra!</p>
-                      <a href="#" id="button2" class="btn btn-primary">Começar Agora</a>
+                      <form method="post" action="#">
+                        <input type="text" id="pitch" placeholder="Buscar produtos, serviços..." name="Search"/>
+                        <input type="submit" id="buttonP" value="Buscar"/>
+                      </form>
                     </div>
                   </div>
                   <div class="carousel-item">
@@ -55,7 +61,10 @@
                     <div class="carousel-caption d-none d-md-block">
                       <h2>Cuidando de seu <br> presente</h2>
                       <p>você estará cuidando de seu futuro...</p>
-                      <a href="#" id="button2" class="btn btn-primary">Começar Agora</a>
+                      <form method="post" action="#">
+                        <input type="text" id="pitch" placeholder="Buscar produtos, serviços..." name="Search"/>
+                        <input type="submit" id="buttonP" value="Buscar"/>
+                      </form>
                     </div>
                   </div>
                 </div>
@@ -87,7 +96,7 @@
                   <a href="#" id="button" class="btn btn-primary">Fazer análise</a>
                 </div>
             </section>
-            <section class="row">
+            <section id="marketplace" class="row">
                 <div class="col-lg-5 col-sm-12">
                     <div id="box" class="row">
                         <div class="col-lg-6 col-sm-12">
@@ -110,7 +119,7 @@
                     <div class="sales">
                         <div class="cards">
                             <h4>7% off</h4>
-                            <img src="Images/Girassol.jpg" class="card-img-top" alt="...">
+                            <img src="Images/Gira.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                               <p class="card-text">Sementes de Girassol (2,5kg)</p>
                               <h5 class="card-title">R$ 70,00</h5>

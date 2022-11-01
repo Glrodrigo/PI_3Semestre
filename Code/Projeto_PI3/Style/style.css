@@ -20,12 +20,19 @@
     font-size: 14px;
 }
 
+.principal form{
+    margin-bottom: 90px;
+}
+
 .principal header li{
     display: inline-block;
     margin: 10px;
     padding: 5px;
+    padding-top: 8px;
     padding-right: 15px;
     color:#95d654;
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .principal li:hover{
@@ -37,10 +44,14 @@
     padding-top: 20px;
 }
 
+.map li:hover{
+    color: #b69492;
+}
+
 .nav img{
     padding-top: 8px;
-    width: 100px;
-    height: 50px;
+    width: 110px;
+    height: 60px;
 }
 
 .cowbow img{
@@ -71,7 +82,7 @@
     display: flex; 
     flex-direction:row;
     justify-content:space-between;  
-    margin-right: 30px;
+    margin-right: 16px;
 }
 
 .card-body{
@@ -83,6 +94,7 @@
     border-style:double;
     border-color:#203b22;
     border-top: none;
+    background-color:white;
 }
 
 .business{
@@ -131,8 +143,22 @@
     padding-top: 15px;
 }
 
+.carousel-inner h2{
+    margin-bottom: 2px;
+    font-size: 3rem;
+    color: #e0f8fc;
+}
+
+.carousel-inner p{
+    font-size: 3rem;
+    font-family: Pacifico-Regular;
+    color: #95d654;
+    margin-bottom: 20px;
+}
+
 .principal h3{
     padding-top: 40px;
+    color: #192f1b;
 }
 
 .sales h4{
@@ -154,18 +180,6 @@
     font-size: 2rem;
 }
 
-.carousel-inner h2{
-    margin-bottom: 2px;
-    font-size: 3rem;
-}
-
-.carousel-inner p{
-    margin-bottom: 88px;
-    font-size: 3rem;
-    font-family: Pacifico-Regular;
-    color: #95d654;
-}
-
 .cards h5{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -179,10 +193,6 @@
     text-decoration: none;
     list-style-type: none;
     color: #e0f8fc;
-}
-
-.map li:hover{
-    color: #b69492;
 }
 
 .cards a{
@@ -202,11 +212,44 @@
     padding-bottom: 20px;
 }
 
+#pitch{
+    border-radius: 10px;
+    width: 430px;
+    height: 45px;
+    text-align:left;
+    padding-left: 10px;
+}
+
+#buttonP{
+    border-radius: 10px;
+    height: 45px;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #192f1b;
+    color: #e0f8fc;
+    border-color: #192f1b;
+
+}
+
+#buttonP:hover{
+    background-color: #01f81621;
+    transition: 3ms;
+}
+
+#marketplace{
+    background-image: url(../Images/Fundo.jpg);
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 20px;
+    height: 530px;
+}
+
 #box{
     border: solid;
     border-color: #95d654;
     margin-top: 70px;
-    margin-left: 28px;
+    margin-left: 16px;
     background-color: #192f1b;
 }
 
@@ -243,7 +286,6 @@
     background-color:#e0f8fc;
     height: 20px;
     width: 20px;
-    margin-top: 250px;
     border-radius: 100%;
     margin-left: 5px;
 }
@@ -267,20 +309,6 @@
 
 #button:hover{
     background-color: #01f81621;
-    transition: 3ms;
-}
-
-#button2{
-    background-color:#95d654;
-    margin-bottom: 30px;
-    border-radius: 12px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-color: #192f1b;
-}
-
-#button2:hover{
-    background-color: #192f1b;
     transition: 3ms;
 }
 
