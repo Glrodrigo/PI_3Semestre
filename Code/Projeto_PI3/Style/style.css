@@ -8,7 +8,12 @@
     width: 960px;
 }
 
-.principal header{
+.searching body{
+    margin: auto;
+    width: 960px;
+}
+
+header{
     display:flex;
     flex-direction:row;
     justify-content:space-between;
@@ -24,7 +29,7 @@
     margin-bottom: 90px;
 }
 
-.principal header li{
+header li{
     display: inline-block;
     margin: 10px;
     padding: 5px;
@@ -35,7 +40,7 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.principal li:hover{
+li:hover{
     color: #e0f8fc;
     transition: 3ms;
 }
@@ -200,6 +205,10 @@
     text-decoration-line: none;
 }
 
+.cards a:hover{
+    color:#95d654;
+}
+
 .centro{
     text-align: center;
     background-color: #b69492;
@@ -229,6 +238,7 @@
     background-color: #192f1b;
     color: #e0f8fc;
     border-color: #192f1b;
+
 }
 
 #buttonP:hover{
@@ -341,4 +351,101 @@
 #button4:hover{
     background-color: #192f1b;
     transition: 3ms;
+}
+
+.loupe{
+    background-image: url(../Images/Fundo1.jpg);
+    width: 960px;
+    margin: auto;
+    height: 1050px;
+}
+
+#name{
+    text-align: center;
+    font-size: 3rem;
+    padding: 30px;
+    padding-top: 40px;
+    font-family: Pacifico-Regular;
+    color: #95d654;
+}
+
+.find img{
+    width: 50px;
+    border-radius: 50px;
+}
+
+.loupe-color{
+    display: none;
+}
+
+.searching form{
+    display: flex;
+    justify-content:center;
+    padding-left: 200px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.sell{
+    display: flex; 
+    flex-direction:row;
+    justify-content:space-between;  
+    margin-right: 23px;
+    padding: auto;
+    padding-top: 50px;
+    padding-bottom: 55px;
+}
+
+.sell h4{
+    position: absolute;
+    margin: 3px;
+    padding: 5px;
+    font-size: 1rem;
+    color: #e0f8fc;
+    background-color: #95d654;
+}
+
+#buttonS{
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+    background-image: url(../Images/Basic.jpg);
+    margin-right: 200px;
+    border: none;
+}
+
+#buttonS:hover{
+    background-image: url(../Images/Color.jpg);
+    border: none;
+}
+
+#find-text{
+    font-size: 16px;
+    background-color: #e2e2e2;
+    height: 55px;
+    border-radius: 40px;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+    width: 0;
+}
+
+#find-text:hover{
+    width: 400px;
+    transition: 0.5s;
+    border:ridge;
+    border-color:#95d654;
+    color: #203b22;
+}
+
+.searching .cards{
+    margin-left: 20px;
+
+}
+
+.searching .cards:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    box-shadow:2px 4px 1px 1px rgba(0, 0, 0, 0.2)
 }
