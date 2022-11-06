@@ -238,7 +238,6 @@ li:hover{
     background-color: #192f1b;
     color: #e0f8fc;
     border-color: #192f1b;
-
 }
 
 #buttonP:hover{
@@ -272,7 +271,6 @@ li:hover{
 }
 
 #buttonC:hover{
-    background-color: #01f81621;
     transition: 3ms;
 }
 
@@ -287,7 +285,33 @@ li:hover{
 }
 
 #buttonC2:hover{
-    background-color: #01f81621;
+    transition: 3ms;
+}
+
+#buttonC3{
+    background-color: #95d654;
+    height: 25px;
+    width: 25px;
+    margin-top: 140px;
+    border-radius: 100%;
+    margin-left: 100px;
+}
+
+#buttonC3:hover{
+    transition: 3ms;
+}
+
+#buttonC4{
+    background-color: #95d654;
+    height: 25px;
+    width: 25px;
+    margin-top: 140px;
+    margin-right: 100px;
+    border-radius: 100%;
+    margin-left: 5px;
+}
+
+#buttonC4:hover{
     transition: 3ms;
 }
 
@@ -360,6 +384,13 @@ li:hover{
     height: 1050px;
 }
 
+.loupe2{
+    background-image: url(../Images/Fundo1.jpg);
+    width: 960px;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
 #name{
     text-align: center;
     font-size: 3rem;
@@ -372,10 +403,6 @@ li:hover{
 .find img{
     width: 50px;
     border-radius: 50px;
-}
-
-.loupe-color{
-    display: none;
 }
 
 .searching form{
@@ -419,6 +446,28 @@ li:hover{
     border: none;
 }
 
+#buttonR{
+    background-color: #95d654;
+    margin-bottom: 6px;
+    border-radius: 26px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-color: #192f1b;
+    width: 90px;
+    font-size: 12px;
+}
+
+#buttonR:hover{
+    background-color: #01f81621;
+    transition: 3ms;
+}
+
+#btnR{
+    padding-top: 2px;
+    padding-right: 50px;
+}
+
 #find-text{
     font-size: 16px;
     background-color: #e2e2e2;
@@ -438,9 +487,26 @@ li:hover{
     color: #203b22;
 }
 
+#nameA, #nameB, #nameC, #nameD{
+    color: #95d654;
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+#img1 img{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 40px;
+    width: 600px;
+    margin-left: 168px;
+}
+
+#p1{
+    padding-bottom: 40px;
+}
+
 .searching .cards{
     margin-left: 20px;
-
 }
 
 .searching .cards:hover{
@@ -448,4 +514,45 @@ li:hover{
     -ms-transform: scale(1.2);
     transform: scale(1.2);
     box-shadow:2px 4px 1px 1px rgba(0, 0, 0, 0.2)
+}
+
+.result{
+    background-color:#203b22;
+    width: 90%;
+    margin-top: 20px;
+    margin: auto;
+    border-radius: 20px;
+    border: solid;
+    border-color: #95d654;
+    margin-top: 20px;
+    color: #e0f8fc;
+}
+
+.result:hover{
+    box-shadow:2px 4px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+td{
+    text-align: center;
+    padding-left: 82px;
+    padding-top: 1px;
+    position: relative;
+}
+
+.paper img{
+    width: 90px;
+    height: 90px;
+    margin-top: 1px;
+    margin-left: 1px;
+    border-radius: 30px;
+    position: absolute;
+}
+
+.pencil img{
+    width: 80px;
+    height: 80px;
+    margin-left: 740px;
+    border-radius: 30px;
+    position: absolute;
+    margin-top: 5px;
 }
