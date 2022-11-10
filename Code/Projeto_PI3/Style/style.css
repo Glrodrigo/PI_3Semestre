@@ -484,6 +484,7 @@ li:hover{
     transition: 0.5s;
     border:ridge;
     border-color:#95d654;
+    background-color: #e2e2e2;
     color: #203b22;
 }
 
@@ -515,7 +516,6 @@ li:hover{
     transform: scale(1.2);
     box-shadow:2px 4px 1px 1px rgba(0, 0, 0, 0.2)
 }
-<<<<<<< HEAD
 
 .result{
     background-color:#203b22;
@@ -557,5 +557,3 @@ td{
     position: absolute;
     margin-top: 5px;
 }
-=======
->>>>>>> 524461a58c51fda84053f2f4e2e5c61642772a02
