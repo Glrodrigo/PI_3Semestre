@@ -24,16 +24,24 @@
 </head>
 <body class="searching">
     <header>
-        <div class="nav">
-            <img src="../Images/Icon.jpg">
+    <div class="nav">
+            <a href="../index.html"><img src="../Images/Icon.jpg"></a>
         </div>
-        <div class="nav">
+        <div class="nav-click">
             <ul>
-                <a href="../index.html"><li>Home</li></a>
-                <a href="#"><li>Cadastre-se</li></a>
                 <a href="#"><li>Análise do solo</li></a>
                 <a href="Pesquisar.html"><li>Marketplace</li></a>
-                <a href="#" id="title"><li>Quem somos</li></a>
+                <a href="#"><li>Sobre</li></a>
+                <li id="perf" class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../Images/Prof.jpg"></a>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Login</a></li>
+                    <li><a class="dropdown-item" href="#">Cadastre-se</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                  </ul>
+                </li>
             </ul>
         </div>
     </header>
@@ -45,7 +53,7 @@
                 </div>
                 <section class="find">
                     <form method="POST" action="Resultado.php">
-                      <input type="text" id="find-text" name="lupa" placeholder="Pesquisar..." name="Search"/>
+                      <input type="text" id="find-text" name="lupa" placeholder="Pesquisar..." name="Search" required autofocus/>
                       <input type="submit" id="buttonS" value=""/>
                     </form>
                 </section>

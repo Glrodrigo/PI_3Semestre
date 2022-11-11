@@ -20,20 +20,28 @@ header{
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    height: 100px;
     background-color: #312f30;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
 }
 
-.principal form{
-    margin-bottom: 90px;
+.subdiv{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    padding: 40px;
+}
+
+.subdiv .txt{
+    padding-top: 23px;
+    text-align: center;
 }
 
 header li{
     display: inline-block;
-    margin: 10px;
+    margin: 5px;
     padding: 5px;
-    padding-top: 8px;
     padding-right: 15px;
     color:#95d654;
     font-size: 15px;
@@ -45,18 +53,20 @@ li:hover{
     transition: 3ms;
 }
 
-.info li{
-    padding-top: 20px;
-}
-
 .map li:hover{
     color: #b69492;
 }
 
 .nav img{
-    padding-top: 8px;
+    margin-top: 10px;
     width: 110px;
     height: 60px;
+}
+
+.subdiv img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
 }
 
 .cowbow img{
@@ -114,13 +124,10 @@ li:hover{
 }
 
 .info-body{
-    background-color: #192f1b;
+    background-color:#203b22;
     color:#e0f8fc;
-    font-size: 18px;
+    font-size: 23px;
     padding: 30px;
-    padding-left: 110px;
-    height: 520px;
-    background-image: linear-gradient(to bottom, #192f1b, #192f1b, #203b22);
 }
 
 .map{
@@ -181,7 +188,7 @@ li:hover{
     text-align: center;
     padding-top: 35px;
     padding-bottom: 15px;
-    background-color: #192f1b;
+    background-color:#203b22;
     font-size: 2rem;
 }
 
@@ -219,6 +226,20 @@ li:hover{
     padding-left: 480px;
     background-color: #312f30;
     padding-bottom: 20px;
+}
+
+#perf img{
+    width: 45px;
+    height: 45px;
+}
+
+#perf a{
+    color:#95d654;
+}
+
+.dropdown-item:hover{
+    background-color:#203b22;
+    border-radius: 20px;
 }
 
 #pitch{
@@ -330,7 +351,7 @@ li:hover{
 
 #button{
     background-color: #95d654;
-    margin-left: 370px;
+    margin-left: 445px;
     margin-top: 20px;
     margin-bottom: 30px;
     border-radius: 12px;
@@ -377,6 +398,15 @@ li:hover{
     transition: 3ms;
 }
 
+#name{
+    text-align: center;
+    font-size: 3rem;
+    padding: 30px;
+    padding-top: 40px;
+    font-family: Pacifico-Regular;
+    color: #95d654;
+}
+
 .loupe{
     background-image: url(../Images/Fundo1.jpg);
     width: 960px;
@@ -391,15 +421,6 @@ li:hover{
     padding-bottom: 30px;
 }
 
-#name{
-    text-align: center;
-    font-size: 3rem;
-    padding: 30px;
-    padding-top: 40px;
-    font-family: Pacifico-Regular;
-    color: #95d654;
-}
-
 .find img{
     width: 50px;
     border-radius: 50px;
@@ -410,6 +431,14 @@ li:hover{
     justify-content:center;
     padding-left: 200px;
     padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.principal form{
+    display: flex;
+    justify-content:center;
+    padding-left: 200px;
+    padding-top: 12px;
     padding-bottom: 2px;
 }
 
@@ -446,6 +475,19 @@ li:hover{
     border: none;
 }
 
+#buttonSS{
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+    background-image: url(../Images/Basics.jpg);
+    border: none;
+}
+
+#buttonSS:hover{
+    background-image: url(../Images/Colors.jpg);
+    border: none;
+}
+
 #buttonR{
     background-color: #95d654;
     margin-bottom: 6px;
@@ -479,8 +521,28 @@ li:hover{
     width: 0;
 }
 
+#find1-text{
+    font-size: 16px;
+    background-color: #312f30;
+    height: 55px;
+    border-radius: 40px;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+    width: 0;
+}
+
 #find-text:hover{
-    width: 400px;
+    width: 360px;
+    transition: 0.5s;
+    border:ridge;
+    border-color:#95d654;
+    background-color: #e2e2e2;
+    color: #203b22;
+}
+
+#find1-text:hover{
+    width: 360px;
     transition: 0.5s;
     border:ridge;
     border-color:#95d654;
@@ -506,6 +568,14 @@ li:hover{
     padding-bottom: 40px;
 }
 
+#p2{
+    padding-bottom: 135px;
+}
+
+#box:hover{
+    box-shadow:2px 4px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
 .searching .cards{
     margin-left: 20px;
 }
@@ -514,7 +584,11 @@ li:hover{
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
-    box-shadow:2px 4px 1px 1px rgba(0, 0, 0, 0.2)
+    box-shadow:2px 4px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.principal .cards:hover{
+    box-shadow:2px 4px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .result{
