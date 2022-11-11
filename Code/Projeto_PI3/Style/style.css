@@ -576,6 +576,16 @@ li:hover{
     box-shadow:2px 4px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
+#parag{
+    width: 400px;
+    font-size: 18px;
+}
+
+#ft{
+    border-radius: 20px; 
+    padding-right: 10px;
+}
+
 .searching .cards{
     margin-left: 20px;
 }
@@ -630,4 +640,126 @@ td{
     border-radius: 30px;
     position: absolute;
     margin-top: 5px;
+}
+
+section.testimonials {
+    margin-top: 90px;
+}
+  
+section.testimonials .section-heading {
+    padding-top: 30px;
+}
+  
+.testimonials .item {
+    border-radius: 15px;
+    padding: 50px 320px 50px 50px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 1);
+    padding-top: 35px;
+}
+  
+.testimonials .item i {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    text-align: center;
+    line-height: 70px;
+    color: #fff;
+    font-size: 44px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+  
+.testimonials .item p {
+    font-size: 16px;
+    font-style: italic;
+}
+  
+.testimonials .item h4 {
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+}
+  
+.testimonials .item span {
+    margin-top: 5px;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color:#95d654;
+}
+  
+.testimonials .item img {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 300px;
+    border-radius: 5px;
+}
+  
+.testimonials .owl-dots {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.testimonials .item img {
+    max-width: 200px;
+    right: 50px;
+}
+
+.testimonials .item i {
+    margin-bottom: 60px;
+}
+
+.testimonials .item img {
+    max-width: 300px;
+    right: 50px;
+    top: 93px;
+    transform: translateY(0);
+}
+
+.imag img{
+    margin-right: 706px;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+}
+
+.testimonials .item {
+    padding: 50px;
+    margin-bottom: 40px;
+}
+
+.section-heading {
+    position: relative;
+    z-index: 2;
+    margin-top: 0px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+  
+.section-heading h6 {
+    font-size: 16px;
+    text-transform: uppercase;
+    color:#95d654;
+    font-weight: 700;
+}
+  
+.section-heading h4 {
+    margin-top: 10px;
+    line-height: 40px;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #212741;
+}
+  
+.section-heading p {
+    margin-top: 30px;
 }

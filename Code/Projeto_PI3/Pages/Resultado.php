@@ -31,7 +31,7 @@
             <ul>
                 <a href="#"><li>Análise do solo</li></a>
                 <a href="Pesquisar.html"><li>Marketplace</li></a>
-                <a href="#"><li>Sobre</li></a>
+                <a href="Sobre.html"><li>Sobre</li></a>
                 <li id="perf" class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="../Images/Prof.jpg"></a>
