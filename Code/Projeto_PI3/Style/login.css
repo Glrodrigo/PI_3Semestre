@@ -60,6 +60,10 @@ form{
     display: block;
 }
 
+input::placeholder {
+    color: #619495;
+  }
+
 #divicion-login{
     margin-bottom: 10%;
 }
