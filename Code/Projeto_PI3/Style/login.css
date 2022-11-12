@@ -1,7 +1,6 @@
 body{
     margin-top: 30px;
     margin-left: 40px;
-    font-family: 'Work Sans', sans-serif;
 }
 
 .ic-close-login img{
@@ -74,21 +73,8 @@ input::placeholder {
 }
 
 #google-login{
-    width: 80%;
-    padding-top: 30px;
-    margin: auto;
-    display: block;
-}
-
-#google-login p{
-    color: #619495;
-    text-align: center;
-    font-size: 18px;
-}
-
-#google-login img{
-    height: 50px;
-    width: 50px;
-    margin: auto;
-    display: block;
+    margin-left: 5%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
 }

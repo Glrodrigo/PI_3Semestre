@@ -12,3 +12,33 @@ function frameLooper () {
 
 }
 frameLooper();
+
+function onSignIn(googleUser){
+  var profile = googleUser.getBasicProfile;
+  startLogin();
+}
+
+var startLogin = function(){
+  gapi.load('auth2', function(){
+    auth2 = gapi.auth2.init(
+      {
+        client_id: '848004400763-etddrh0ukjpbmuu953077sasgl1ktl7u',
+        cokkiepolicy: 'single_host_origin',
+        scope: 'profile email'
+      });
+      auth2.attachClickHandler(document.getElementById('llogin'),{}, onSuccess, onFailure);
+  });
+
+  function onSuccess(googleUser){
+        var profile = response.getBasicProfile();
+        var userID = perfil.getId();
+        var userName = perfil.getName();
+        var userEmail = perfil.getEmail();
+        var userPicture = perfil.getImageUrl();
+
+  }
+
+  function onFailure(error){
+    console.log(error);
+  }  
+}
