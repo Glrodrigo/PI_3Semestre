@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/Code/Projeto_PI3/Style/login.css"><link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
-    <title>Login</title>
+    <title>Cadastro</title>
 </head>
 
 <body>
@@ -28,19 +28,32 @@
             Que bom te ver por aqui :)
         </h1>
 
-        <h2>Acesse sua conta </h2>
+        <h2>Cadastre-se </h2>
     </div>
 
     <section class="form-input">
         <form>
+            <label form="email-input">Usuário</label> <br>
+            <input type="email" class="form-email" id="form"
+                aria-describedby="Crie um nome de usuário" placeholder="Crie um nome de usuário"> <br>   
+
+            <label form="email-input">Nome</label> <br>
+            <input type="email" class="form-email" id="form"
+                aria-describedby="Nome" placeholder="Nome"> <br>
+
             <label form="email-input">E-mail</label> <br>
             <input type="email" class="form-email" id="form"
-                aria-describedby="Digite seu e-mail" placeholder="Digite seu e-mail"> <br>
+                    aria-describedby="Digite seu e-mail" placeholder="Digite seu e-mail"> <br>    
 
             <label for="password-input">Senha</label><br>
             <input type="password" class="form-password" id="form"
-                aria-describedby="Digite sua senha" placeholder="Digite sua senha"> <br>
-            <button type="login" class="bt-login">Entrar</button>
+                aria-describedby="Digite uma senha" placeholder="Digite uma senha"> <br>
+
+            <label for="password-input">Confirmação da senha</label><br>
+            <input type="password" class="form-password" id="form"
+                aria-describedby="Digite novamente a senha" placeholder="Digite novamente a senha"> <br>    
+
+            <button type="login" class="bt-login">Cadastrar-se</button>
         </form>
     </section>
 
