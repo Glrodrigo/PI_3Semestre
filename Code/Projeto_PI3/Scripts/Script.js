@@ -22,7 +22,7 @@ var startLogin = function(){
   gapi.load('auth2', function(){
     auth2 = gapi.auth2.init(
       {
-        client_id: '848004400763-etddrh0ukjpbmuu953077sasgl1ktl7u',
+        client_id: 'client_id',
         cokkiepolicy: 'single_host_origin',
         scope: 'profile email'
       });
