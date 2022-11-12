@@ -11,7 +11,7 @@ body{
 }
 .greetings h1{
     margin-left: 5%;
-    margin-top: 80px;
+    margin-top: 70px;
     font-family: 'Work Sans', sans-serif;
     font-size: 32px;
     color: #619495;
@@ -19,7 +19,10 @@ body{
 
 .greetings h2{
     text-align: center;
-    margin: 5%;
+    margin-top: 40px;
+    size: 24px;
+    color: #2C3C3B;
+    margin-bottom: 10px;
 }
 
 form{
@@ -51,7 +54,7 @@ form{
     padding: 5px;
     font-size: 20px;
     margin-top: 10px;
-    margin-bottom: 10%;
+    margin-bottom: 50px;
   }
 
 #division-login img{
@@ -66,4 +69,25 @@ input::placeholder {
 
 #divicion-login{
     margin-bottom: 10%;
+}
+
+#google-login{
+    width: 80%;
+    padding-top: 30px;
+    margin: auto;
+    display: block;
+}
+
+#google-login p{
+    color: #619495;
+    text-align: center;
+    font-size: 18px;
+}
+
+#google-login img{
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+    margin: auto;
+    display: block;
 }
