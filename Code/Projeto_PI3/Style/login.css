@@ -47,7 +47,7 @@ form{
 }
 
 .bt-login{
-    width: 20%;
+    width: 150px;
     margin: auto 30%;
     background-color: #2C3C3B;
     color: white;
@@ -77,4 +77,17 @@ input::placeholder {
     padding-top: 50px;
     display: flex;
     justify-content: center;
+}
+
+#form{
+    width: 80%;
+    max-width: 800px;
+    min-width: 200px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-color: #619495;
+    color: #2C3C3B;
+    padding: 10px 5px;
+    box-shadow: #2C3C3B;
+    border-style: solid;
 }
