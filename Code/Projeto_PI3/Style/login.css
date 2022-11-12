@@ -1,0 +1,93 @@
+body{
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.ic-close-login img{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+
+}
+.greetings h1{
+    margin-left: 5%;
+    margin-top: 70px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 32px;
+    color: #619495;
+}
+
+.greetings h2{
+    text-align: center;
+    margin-top: 40px;
+    size: 24px;
+    color: #2C3C3B;
+    margin-bottom: 10px;
+}
+
+form{
+    margin-top: 10%;
+    color: #619495;
+    margin: 0 20%;
+    width: 80%;
+}
+
+#form-password, #form-email{
+    width: 80%;
+    max-width: 800px;
+    min-width: 200px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-color: #619495;
+    color: #2C3C3B;
+    padding: 10px 5px;
+    box-shadow: #2C3C3B;
+    border-style: solid;
+}
+
+.bt-login{
+    width: 20%;
+    margin: auto 30%;
+    background-color: #2C3C3B;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+
+#division-login img{
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+
+input::placeholder {
+    color: #619495;
+  }
+
+#divicion-login{
+    margin-bottom: 10%;
+}
+
+#google-login{
+    width: 80%;
+    padding-top: 30px;
+    margin: auto;
+    display: block;
+}
+
+#google-login p{
+    color: #619495;
+    text-align: center;
+    font-size: 18px;
+}
+
+#google-login img{
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+    margin: auto;
+    display: block;
+}
