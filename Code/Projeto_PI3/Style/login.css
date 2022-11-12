@@ -1,10 +1,13 @@
 body{
     margin-top: 30px;
     margin-left: 40px;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .ic-close-login img{
     position: absolute;
+    height: 40px;
+    width: 40px;
     right: 30px;
     top: 30px;
 
@@ -12,7 +15,6 @@ body{
 .greetings h1{
     margin-left: 5%;
     margin-top: 70px;
-    font-family: 'Work Sans', sans-serif;
     font-size: 32px;
     color: #619495;
 }
@@ -87,7 +89,6 @@ input::placeholder {
 #google-login img{
     height: 50px;
     width: 50px;
-    margin-top: 10px;
     margin: auto;
     display: block;
 }
