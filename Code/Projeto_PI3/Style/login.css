@@ -5,6 +5,8 @@ body{
 
 .ic-close-login img{
     position: absolute;
+    height: 40px;
+    width: 40px;
     right: 30px;
     top: 30px;
 
@@ -12,7 +14,6 @@ body{
 .greetings h1{
     margin-left: 5%;
     margin-top: 70px;
-    font-family: 'Work Sans', sans-serif;
     font-size: 32px;
     color: #619495;
 }
@@ -72,22 +73,8 @@ input::placeholder {
 }
 
 #google-login{
-    width: 80%;
-    padding-top: 30px;
-    margin: auto;
-    display: block;
-}
-
-#google-login p{
-    color: #619495;
-    text-align: center;
-    font-size: 18px;
-}
-
-#google-login img{
-    height: 50px;
-    width: 50px;
-    margin-top: 10px;
-    margin: auto;
-    display: block;
+    margin-left: 4.35%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
 }
