@@ -14,7 +14,7 @@
 <body class="principal">
     <header>
         <div class="nav">
-            <a href="#"><img src="{% static 'Images/Icon.jpg' %}"></a>
+            <a href="/"><img src="{% static 'Images/Icon.jpg' %}"></a>
         </div>
         <section class="find1">
           <form method="POST" action="Pages/Resultado.php">
@@ -25,15 +25,15 @@
         <div class="nav-click">
             <ul>
                 <a href="#"><li>Análise do solo</li></a>
-                <a href="{% static 'Pages/Pesquisar.html' %}"><li>Marketplace</li></a>
-                <a href="{% static 'Pages/Sobre.html' %}"><li>Sobre</li></a>
+                <a href="/pesquisar"><li>Marketplace</li></a>
+                <a href="/sobre"><li>Sobre</li></a>
                 <li id="perf" class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="{% static 'Images/Prof.jpg' %}"></a>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="{% static 'Pages/login.html' %">Login</a></li>
-                    <li><a class="dropdown-item" href="{% static 'Pages/cadastro.html' %">Cadastre-se</a></li>
+                    <li><a class="dropdown-item" href="/login">Login</a></li>
+                    <li><a class="dropdown-item" href="/cadastro">Cadastre-se</a></li>
                     <li><a class="dropdown-item" href="#">Logout</a></li>
                   </ul>
                 </li>
@@ -176,7 +176,7 @@
                     <ul>
                         <a href="#"><li>Contato</li></a>
                         <a href="#"><li>Novidades</li></a>
-                        <a href="#"><li>Quem somos</li></a>
+                        <a href="/sobre"><li>Quem somos</li></a>
                         <a href="#"><li>Serviços</li></a>
                     </ul>
                 </div>
