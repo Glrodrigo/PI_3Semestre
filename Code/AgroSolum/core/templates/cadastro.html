@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
@@ -11,7 +12,7 @@
     rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
     crossorigin="anonymous">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <link rel="stylesheet" href="/Code/Projeto_PI3/Style/login.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}"><link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
     <title>Cadastro</title>
@@ -19,7 +20,7 @@
 
 <body>
     <div class="ic-close-login">
-        <a href="/Code/Projeto_PI3/index.html"><img src="/Code/Projeto_PI3/Images/icon_close.svg"></a>
+        <a href="/"><img src="{% static 'Images/icon_close.svg' %}"></a>
     </div>
 
     <div class="greetings">
@@ -58,7 +59,7 @@
     </section>
 
     <section id="division-login">
-        <img src="/Code/Projeto_PI3/Images/Division.svg">
+        <img src="{% static 'Images/Division.svg' %}">
     </section>
     
     <div id="google-login">
