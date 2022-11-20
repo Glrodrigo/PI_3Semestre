@@ -64,8 +64,8 @@ li:hover{
 }
 
 .subdiv img{
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
 }
 
@@ -223,7 +223,7 @@ li:hover{
 }
 
 .socials{
-    padding-left: 480px;
+    padding-left: 43%;
     background-color: #312f30;
     padding-bottom: 20px;
 }
@@ -351,7 +351,7 @@ li:hover{
 
 #button{
     background-color: #95d654;
-    margin-left: 445px;
+    margin-left: 43%;
     margin-top: 20px;
     margin-bottom: 30px;
     border-radius: 12px;
@@ -385,7 +385,7 @@ li:hover{
     background-color: #95d654;
     margin-top: 20px;
     margin-bottom: 30px;
-    margin-left: 218px;
+    margin-left: 35%;
     border-radius: 12px;
     padding-left: 20px;
     padding-right: 20px;
