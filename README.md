@@ -1,9 +1,8 @@
-# Projeto Interdisciplinar 3º semestre
+<h1 align="center">Projeto Interdisciplinar 3º semestre</h1>
 
-## Fatec Araras
+<h2 align="center">Fatec Araras</h2>
 
-
-### Agro Solum
+<h3 align="center">Agro Solum</h3>
 
 <p align="center">
 <img src="https://github.com/paulademelo/projeto-interdisciplinar-3-Fatec-DSM/blob/main/Code/Projeto_PI3/Images/Icon.png" width="300px">
