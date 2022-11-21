@@ -2,10 +2,10 @@
 
 ## Fatec Araras
 
-<center>
+<p align="center">
 ### Agro Solum
 <img src="https://github.com/paulademelo/projeto-interdisciplinar-3-Fatec-DSM/blob/main/Code/Projeto_PI3/Images/Icon.png" width="300px">
-</center>
+<p align="center">
 
 <h4>OBJETIVO</h4>
 <p> A Organização das Nações Unidas juntamente com seus parceiros propuseram 17 objetivos para apoiar o Desenvolvimento Sustentável no Brasil, dentro dessas metas, o objetivo nono, relacionado à indústria, inovação e infraestrutura, foi o escolhido para ser tema do projeto interdisciplinar do terceiro semestre de Desenvolvimento de Software Multiplataforma da Fatec Araras.
