@@ -2,8 +2,10 @@
 
 ## Fatec Araras
 
-<p align="center">
+
 ### Agro Solum
+
+<p align="center">
 <img src="https://github.com/paulademelo/projeto-interdisciplinar-3-Fatec-DSM/blob/main/Code/Projeto_PI3/Images/Icon.png" width="300px">
 <p align="center">
 
