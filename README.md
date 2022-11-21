@@ -2,7 +2,7 @@
 
 ## Fatec Araras
 
-### Agro Solum ![Icon](C:\Users\pauli\OneDrive\Área de Trabalho\DSM\PI3°Sem\Projeto\projeto-interdisciplinar-3-Fatec-DSM\Code\Projeto_PI3\Images\Icon.png)
+### Agro Solum 
 
 
 
