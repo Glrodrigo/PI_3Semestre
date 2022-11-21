@@ -352,8 +352,8 @@ li:hover{
 #button{
     background-color: #95d654;
     margin-left: 43%;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
     border-radius: 12px;
     padding: 10px;
     padding-left: 40px;
@@ -361,7 +361,19 @@ li:hover{
     border-color: #192f1b;
 }
 
-#button:hover{
+#buttonn{
+    background-color: #95d654;
+    margin-left: 43%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-color: #192f1b;
+}
+
+#button:hover, #buttonn:hover{
     background-color: #01f81621;
     transition: 3ms;
 }
