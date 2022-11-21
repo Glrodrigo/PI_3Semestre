@@ -55,11 +55,6 @@ O projeto foi estruturado pensando em auxiliar os pequenos e médios produtores 
   - O sistema deve criptografar todas as comunicações entre o usuário e o servidor, assim como deixar explícito qual será o uso e quais dados que o sistema detém do usuário, levando em consideração a LGPB. O sistema também deverá fazer a exclusão de toda e qualquer informação dos usuários quando não houver consentimento do mesmo ou caso este decida parar de fazer uso do nosso sistema.
 
 
-<h4>TECNOLOGIAS UTILIZADAS</h4>
-
-`python` `django`  `html`  `css`  `nosql`  `javascript`
-
-
 <h4>REQUISITOS DE SOFTWARE</h4>
 
 - Aplicação utilizando Python e Django.
@@ -71,3 +66,17 @@ O projeto foi estruturado pensando em auxiliar os pequenos e médios produtores 
 
 - Embrapa catálogos de APIs: https://www.agroapi.cnptia.embrapa.br/portal/
 - Objetivo 9 ONU: https://brasil.un.org/pt-br/sdgs/9
+
+<br>
+<div align="center">
+
+    
+<h2> Desenvolvimento </h2>
+
+![SQLite](https://img.shields.io/badge/-SQLite-blue)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Django?style=flat-square)
+![HTML5](https://img.shields.io/badge/-HTML5-red)
+![JavaScript](https://img.shields.io/badge/-JAVASCRIPT-yellow)
+![CSS3](https://img.shields.io/badge/-CSS3-blue)
+    
+</div>
