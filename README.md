@@ -9,7 +9,7 @@
 <p align="center">
 
 <h4>OBJETIVO</h4>
-<p> A Organização das Nações Unidas juntamente com seus parceiros propuseram 17 objetivos para apoiar o Desenvolvimento Sustentável no Brasil, dentro dessas metas, o objetivo nono, relacionado à indústria, inovação e infraestrutura, foi o escolhido para ser tema do projeto interdisciplinar do terceiro semestre de Desenvolvimento de Software Multiplataforma da Fatec Araras.
+<p> A Organização das Nações Unidas juntamente com seus parceiros propuseram 17 objetivos para apoiar o Desenvolvimento Sustentável no Brasil, dentro dessas metas, o objetivo 9º, relacionado à indústria, inovação e infraestrutura, foi o escolhido para ser tema do projeto interdisciplinar do terceiro semestre de Desenvolvimento de Software Multiplataforma da Fatec Araras.
  Baseado nesse objetivo, desenvolvemos uma aplicação web que auxilia os produtores rurais a identificar o tipo do solo e indicar os melhores cultivares.</p>
 
 
