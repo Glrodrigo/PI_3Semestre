@@ -43,7 +43,7 @@ header li{
     margin: 5px;
     padding: 5px;
     padding-right: 15px;
-    color:#95D753;
+    color:#95d654;
     font-size: 15px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -164,7 +164,7 @@ li:hover{
 .carousel-inner p{
     font-size: 3rem;
     font-family: Pacifico-Regular;
-    color: #95D753;
+    color: #95d654;
     margin-bottom: 20px;
 }
 
@@ -179,12 +179,12 @@ li:hover{
     padding: 5px;
     font-size: 1rem;
     color: #e0f8fc;
-    background-color: #95D753;
+    background-color: #95d654;
 }
 
 .info h5{
     margin-bottom: 0px;
-    color: #95D753;
+    color: #95d654;
     text-align: center;
     padding-top: 35px;
     padding-bottom: 15px;
@@ -213,7 +213,7 @@ li:hover{
 }
 
 .cards a:hover{
-    color:#95D753;
+    color:#95d654;
 }
 
 .centro{
@@ -234,7 +234,7 @@ li:hover{
 }
 
 #perf a{
-    color:#95D753;
+    color:#95d654;
 }
 
 .dropdown-item:hover{
@@ -276,14 +276,14 @@ li:hover{
 
 #box{
     border: solid;
-    border-color: #95D753;
+    border-color: #95d654;
     margin-top: 70px;
     margin-left: 16px;
     background-color: #192f1b;
 }
 
 #buttonC{
-    background-color: #95D753;
+    background-color: #95d654;
     height: 50px;
     width: 50px;
     margin-top: 250px;
@@ -296,7 +296,7 @@ li:hover{
 }
 
 #buttonC2{
-    background-color: #95D753;
+    background-color: #95d654;
     height: 50px;
     width: 50px;
     margin-top: 250px;
@@ -310,7 +310,7 @@ li:hover{
 }
 
 #buttonC3{
-    background-color: #95D753;
+    background-color: #95d654;
     height: 25px;
     width: 25px;
     margin-top: 140px;
@@ -323,7 +323,7 @@ li:hover{
 }
 
 #buttonC4{
-    background-color: #95D753;
+    background-color: #95d654;
     height: 25px;
     width: 25px;
     margin-top: 140px;
@@ -350,7 +350,7 @@ li:hover{
 }
 
 #button{
-    background-color: #95D753;
+    background-color: #95d654;
     margin-left: 43%;
     margin-top: 30px;
     margin-bottom: 10px;
@@ -361,8 +361,20 @@ li:hover{
     border-color: #192f1b;
 }
 
+#buttonA{
+    background-color:#203b22;
+    margin-left: 43%;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border-radius: 12px;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-color: #192f1b;
+}
+
 #buttonn{
-    background-color: #95D753;
+    background-color: #95d654;
     margin-left: 43%;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -378,8 +390,14 @@ li:hover{
     transition: 3ms;
 }
 
+#buttonA:hover{
+    background-color: #01f81621;
+    color: #203b22;
+    transition: 3ms;
+}
+
 #button3{
-    background-color: #95D753;
+    background-color: #95d654;
     margin-bottom: 26px;
     border-radius: 18px;
     padding: 8px;
@@ -394,7 +412,7 @@ li:hover{
 }
 
 #button4{
-    background-color: #95D753;
+    background-color: #95d654;
     margin-top: 20px;
     margin-bottom: 30px;
     margin-left: 35%;
@@ -406,7 +424,7 @@ li:hover{
 }
 
 #button4:hover{
-    background-color: #2C3C3B;
+    background-color: #192f1b;
     transition: 3ms;
 }
 
@@ -416,12 +434,19 @@ li:hover{
     padding: 30px;
     padding-top: 40px;
     font-family: Pacifico-Regular;
-    color: #95D753;
+    color: #95d654;
 }
 
 .loupe{
     background-image: url(../Images/Fundo1.jpg);
     width: 960px;
+    margin: auto;
+    height: 1050px;
+}
+
+.loupeI{
+    background-image: url(../Images/bg-leafs.svg);
+    padding: 70px;
     margin: auto;
     height: 1050px;
 }
@@ -470,7 +495,7 @@ li:hover{
     padding: 5px;
     font-size: 1rem;
     color: #e0f8fc;
-    background-color: #95D753;
+    background-color: #95d654;
 }
 
 #buttonS{
@@ -501,13 +526,13 @@ li:hover{
 }
 
 #buttonR{
-    background-color: #95D753;
+    background-color: #95d654;
     margin-bottom: 6px;
     border-radius: 26px;
     padding: 5px;
     padding-left: 20px;
     padding-right: 20px;
-    border-color: #2C3C3B;
+    border-color: #192f1b;
     width: 90px;
     font-size: 12px;
 }
@@ -548,18 +573,18 @@ li:hover{
     width: 360px;
     transition: 0.5s;
     border:ridge;
-    border-color:#95D753;
+    border-color:#95d654;
     background-color: #e2e2e2;
-    color: #2C3C3B;
+    color: #203b22;
 }
 
 #find1-text:hover{
     width: 360px;
     transition: 0.5s;
     border:ridge;
-    border-color:#95D753;
+    border-color:#95d654;
     background-color: #e2e2e2;
-    color: #2C3C3B;
+    color: #203b22;
 }
 
 #nameA, #nameB, #nameC, #nameD{
@@ -614,13 +639,13 @@ li:hover{
 }
 
 .result{
-    background-color:#2C3C3B;
+    background-color:#203b22;
     width: 90%;
     margin-top: 20px;
     margin: auto;
     border-radius: 20px;
     border: solid;
-    border-color: #95D753;
+    border-color: #95d654;
     margin-top: 20px;
     color: #e0f8fc;
 }
@@ -703,7 +728,7 @@ section.testimonials .section-heading {
     display: block;
     font-size: 16px;
     font-weight: 600;
-    color:#95D753;
+    color:#95d654;
 }
   
 .testimonials .item img {
@@ -759,7 +784,7 @@ section.testimonials .section-heading {
 .section-heading h6 {
     font-size: 16px;
     text-transform: uppercase;
-    color:#95D753;
+    color:#95d654;
     font-weight: 700;
 }
   
@@ -774,4 +799,79 @@ section.testimonials .section-heading {
   
 .section-heading p {
     margin-top: 30px;
+}
+
+.prod{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.prodI{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 8px;
+    color: #95d654;
+    background-color: #203b22;
+    margin: auto;
+}
+
+.prodII{
+    margin-left: 32%;
+    position: absolute;
+    margin-top: 30px;
+}
+
+.tip img{
+    width: 350px;
+    height: 250px;
+    margin-left: 35%;
+}
+
+.solo{
+    margin-left: 0px;
+    padding-left: 25%;
+    font-size: 23px;
+}
+
+.solo p{
+    padding-top: 60px;
+}
+
+.resulta{
+    display: flex;  
+    padding-top: 20px;
+    padding: 20px;
+    background-color:#203b22;
+    color: #e0f8fc;
+    margin: auto;
+}
+
+.feat{
+    display: flex;
+    justify-content: space-around;
+    background-color: #203b22;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.feat h6{
+    color: #95d654;
+    text-align: center;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.feat p{
+    color:#e0f8fc;
+    text-align: center;
+    padding: 5px;
+}
+
+.cardf img{
+    width: 130px;
+    height: 120px;
+}
+
+#textI, #textII, #textIII, #textIV{
+    width: 130px;
 }
