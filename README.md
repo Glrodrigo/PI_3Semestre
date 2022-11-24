@@ -64,7 +64,7 @@ O projeto foi estruturado pensando em auxiliar os pequenos e médios produtores 
 <h4>REFERÊNCIAS:</h4>
 
 - Embrapa catálogos de APIs: https://www.agroapi.cnptia.embrapa.br/portal/
-- Objetivo 9 ONU: https://brasil.un.org/pt-br/sdgs/9
+- Objetivo de Desenvolvimento Sustentável: https://brasil.un.org/pt-br/sdgs/9
 
 <br>
 <div align="center">
