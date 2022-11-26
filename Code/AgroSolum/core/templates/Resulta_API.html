@@ -1,0 +1,204 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Resultado API</title>
+</head>
+<body class="searching">
+    <header>
+        <div class="nav">
+            <a href="/"><img src="{% static 'Images/Icon.jpg' %}"></a>
+        </div>
+        <div class="nav-click">
+            <ul>
+                <a href="/cidade"><li>Análise do solo</li></a>
+                <a href="/pesquisar"><li>Marketplace</li></a>
+                <a href="/sobre"><li>Sobre</li></a>
+                <li id="perf" class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="{% static 'Images/Prof.jpg' %}"></a>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Login</a></li>
+                    <li><a class="dropdown-item" href="#">Cadastre-se</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                  </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+          <div class="prodI">
+            <h3>Resultado</h3>
+          </div>
+          <section class="resulta">
+            <div class="tip">
+              <img src="" id="photo">
+            </div>
+            <div class="solo">
+              <p>De acordo com a análise,<br> o solo é classificado como </p>
+              <h4></h4>
+            </div>
+          </section>
+          <div class="prodI">
+            <h3>Características</h3>
+          </div>
+          <section class="feat">
+            <div class="cardf">
+              <h6>Textura</h6>
+              <img src="{% static 'Images/Texture.png' %}" class="cardf-img-top" alt="...">
+              <div class="cardf-body">
+                <p id="textI"></p>
+              </div>
+            </div>
+            <div class="cardf">
+              <h6>Cor</h6>
+              <img src="{% static 'Images/Paint.png' %}" class="cardf-img-top" alt="...">
+              <div class="cardf-body">
+                <p id="textII"></p>
+              </div>
+            </div>
+            <div class="cardf">
+              <h6>Estação</h6>
+              <img src="{% static 'Images/Time.png' %}" class="cardf-img-top" alt="...">
+              <div class="cardf-body">
+                <p id="textIII"></p>
+              </div>
+            </div>
+            <div class="cardf">
+              <h6>Cultivo</h6>
+              <img src="{% static 'Images/Seeds.png' %}" class="cardf-img-top" alt="...">
+              <div class="cardf-body">
+                <p id="textIV"></p>
+              </div>
+            </div>
+          </section>
+          <div class="prodII">
+            <h3>Produtos Indicados</h3>
+          </div>
+          <section class="loupeI" id="loupe_container">
+            <section class="item" id="item">
+              <div class="sell">
+                  <div class="cards" id="cardfI">
+                      <h4 id="card_descI">15% off</h4>
+                      <img src="{% static 'Images/Cafe.jpg' %}"  id="ft_cardI" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text" id="txt_cardI">Sementes de Café Arábica (1,5kg)</p>
+                        <h5 class="card-title" id="value_cardI">R$ 35,70</h5>
+                        <a href="https://lista.mercadolivre.com.br/sementes#D[A:sementes]" >Comprar</a>
+                      </div>
+                  </div>
+                  <div class="cards" id="cardfII">
+                      <h4 id="card_descII">15% off</h4>
+                          <img src="{% static 'Images/Milho.jpg' %}" id="ft_cardII" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <p class="card-text" id="txt_cardII">Sementes de Milho (1,0kg)</p>
+                            <h5 class="card-title" id="value_cardII">R$ 31,98</h5>
+                        <a href="https://lista.mercadolivre.com.br/sementes#D[A:sementes]" >Comprar</a>
+                        </div>
+                  </div>
+                  <div class="cards" id="cardfIII">
+                      <h4 id="card_descIII">10% off</h4>
+                      <img src="{% static 'Images/Arroz.jpg' %}" id="ft_cardIII" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text" id="txt_cardIII">Sementes de Arroz (10,0kg)</p>
+                        <h5 class="card-title" id="value_cardIII">R$ 16,98</h5>
+                        <a href="https://lista.mercadolivre.com.br/sementes#D[A:sementes]" >Comprar</a>
+                      </div>
+                  </div>
+                  <div class="cards" id="cardfIV">
+                      <h4 id="card_descIV">7% off</h4>
+                      <img src="{% static 'Images/Gira.jpg' %}" id="ft_cardIV" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text" id="txt_cardIV">Sementes de Girassol (2,5kg)</p>
+                        <h5 class="card-title" id="value_cardIV">R$ 70,00</h5>
+                        <a href="https://lista.mercadolivre.com.br/sementes#D[A:sementes]" >Comprar</a>
+                      </div>
+                  </div>
+              </div>                 
+            </section>
+            <div class="sell" id="sell">
+              <div class="cards" id="cardfV">
+                  <h4 id="card_descV">15% off</h4>
+                  <img src="{% static 'Images/Maca.jpg' %}" id="ft_cardV" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text" id="txt_cardV">Sementes de Maçã <br>Fuji (5,0kg)</p>
+                    <h5 class="card-title" id="value_cardV">R$ 38,98</h5>
+                    <a href="https://lista.mercadolivre.com.br/sementes#D[A:sementes]" >Comprar</a>
+                  </div>
+              </div>
+              <div class="cards" id="cardfVI">
+                  <h4 id="card_descVI">10% off</h4>
+                  <img src="{% static 'Images/Uva.jpg' %}" id="ft_cardVI" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text" id="txt_cardVI">Sementes de Uva <br>Niagara (1,5kg)</p>
+                    <h5 class="card-title" id="value_cardVI">R$ 16,80</h5>
+                    <a href="https://lista.mercadolivre.com.br/sementes#D[A:sementes]" >Comprar</a>
+                  </div>
+              </div>
+              <div class="cards" id="cardfVII">
+                  <h4 id="card_descVII">10% off</h4>
+                  <img src="{% static 'Images/Beterraba.jpg' %}" id="ft_cardVII" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text" id="txt_cardVII">Sementes de Beterraba Listrada (1,0kg)</p>
+                    <h5 class="card-title" id="value_cardVII">R$ 9,99</h5>
+                    <a href="https://lista.mercadolivre.com.br/sementes#D[A:sementes]" >Comprar</a>
+                  </div>
+              </div>
+              <div class="cards" id="cardfVIII">
+                  <h4 id="card_descVIII">7% off</h4>
+                  <img src="{% static 'Images/Laranja.jpg' %}" id="ft_cardVIII" id="ft_cardI" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text" id="txt_cardVIII">Sementes de Laranja Lima (5,0kg)</p>
+                    <h5 class="card-title" id="value_cardVIII">R$ 25,70</h5>
+                    <a href="https://lista.mercadolivre.com.br/sementes#D[A:sementes]" >Comprar</a>
+                  </div>
+              </div>
+            </div>
+            <h6 id="empty">Sem resultados para este solo, visto que este é infértil</h6>
+            <a href="/pesquisar" id="buttonA" class="btn btn-primary">Ver mais</a> 
+            </section>
+            <section class="map">
+              <div class="agro">
+                <h5 class="agro-title">AgroSolum</h5>
+                <ul>
+                  <a href="#"><li>Contato</li></a>
+                  <a href="#"><li>Novidades</li></a>
+                  <a href="#"><li>Quem somos</li></a>
+                  <a href="#"><li>Serviços</li></a>
+                </ul>
+              </div>
+              <div class="suport">
+                <h5 class="suport-title">Ajuda</h5>
+                <ul>
+                  <a href="#"><li>Perguntas e respostas</li></a>
+                  <a href="#"><li>Termos e codições de uso</li></a>
+                  <a href="#"><li>Utilização dos dados</li></a>
+                  <a href="#"><li>Suporte</li></a>
+                </ul>
+                </div>
+                <div class="image">
+                  <img src="{% static 'Images/Icon.jpg' %}">
+                </div>
+            </section>
+            <div class="socials">
+              <img src="{% static 'Images/Rede.jpg' %}">
+            </div>              
+          </section> 
+        </section>   
+    </main>
+    <footer class='centro'>Copyright &copy; 2022 Development Fatec</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+    crossorigin="anonymous"></script>
+    <script src="{% static 'assets/resulta.js' %}"></script>
+</body>
+</html>
