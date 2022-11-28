@@ -64,8 +64,8 @@ li:hover{
 }
 
 .subdiv img{
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
 }
 
@@ -223,7 +223,7 @@ li:hover{
 }
 
 .socials{
-    padding-left: 480px;
+    padding-left: 43%;
     background-color: #312f30;
     padding-bottom: 20px;
 }
@@ -351,9 +351,9 @@ li:hover{
 
 #button{
     background-color: #95d654;
-    margin-left: 445px;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-left: 43%;
+    margin-top: 30px;
+    margin-bottom: 10px;
     border-radius: 12px;
     padding: 10px;
     padding-left: 40px;
@@ -361,8 +361,38 @@ li:hover{
     border-color: #192f1b;
 }
 
-#button:hover{
+#buttonA{
+    background-color:#203b22;
+    margin-left: 43%;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border-radius: 12px;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-color: #192f1b;
+}
+
+#buttonn{
+    background-color: #95d654;
+    margin-left: 43%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-color: #192f1b;
+}
+
+#button:hover, #buttonn:hover{
     background-color: #01f81621;
+    transition: 3ms;
+}
+
+#buttonA:hover{
+    background-color: #01f81621;
+    color: #203b22;
     transition: 3ms;
 }
 
@@ -385,7 +415,7 @@ li:hover{
     background-color: #95d654;
     margin-top: 20px;
     margin-bottom: 30px;
-    margin-left: 218px;
+    margin-left: 35%;
     border-radius: 12px;
     padding-left: 20px;
     padding-right: 20px;
@@ -410,6 +440,13 @@ li:hover{
 .loupe{
     background-image: url(../Images/Fundo1.jpg);
     width: 960px;
+    margin: auto;
+    height: 1050px;
+}
+
+.loupeI{
+    background-image: url(../Images/bg-leafs.svg);
+    padding: 70px;
     margin: auto;
     height: 1050px;
 }
@@ -762,4 +799,86 @@ section.testimonials .section-heading {
   
 .section-heading p {
     margin-top: 30px;
+}
+
+.prod{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.prodI{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 8px;
+    color: #95d654;
+    background-color: #203b22;
+    margin: auto;
+}
+
+.prodII{
+    margin-left: 32%;
+    position: absolute;
+    margin-top: 30px;
+}
+
+.tip img{
+    width: 350px;
+    height: 250px;
+    margin-left: 35%;
+}
+
+.solo{
+    margin-left: 0px;
+    padding-left: 25%;
+    font-size: 23px;
+}
+
+.solo p{
+    padding-top: 60px;
+}
+
+.resulta{
+    display: flex;  
+    padding-top: 20px;
+    padding: 20px;
+    background-color:#203b22;
+    color: #e0f8fc;
+    margin: auto;
+}
+
+.feat{
+    display: flex;
+    justify-content: space-around;
+    background-color: #203b22;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.feat h6{
+    color: #95d654;
+    text-align: center;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.feat p{
+    color:#e0f8fc;
+    text-align: center;
+    padding: 5px;
+}
+
+.cardf img{
+    width: 130px;
+    height: 120px;
+}
+
+#textI, #textII, #textIII, #textIV{
+    width: 130px;
+}
+
+#empty{
+    text-align: center;
+    font-size: 25px;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
