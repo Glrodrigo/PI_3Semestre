@@ -90,8 +90,8 @@ const q5 = {
     alternativaD : "7001,00 a 15000,00 R$",
 }
 
-const imagens = ['', '', "{% static 'Images/Tipo.png' %}", "{% static 'Images/Nivel.png' %}", 
-"{% static 'Images/Season.png'%}", "{% static 'Images/Investir.jpg' %}"]
+const imagens = ['', '', "/static/Images/Tipo.png", "/static/Images/Nivel.png", 
+"/static/Images/Season.png", "/static/Images/Investir.jpg"]
 const questoes = [q0, q1, q2, q3, q4, q5]
 // Guardar respostas
 const respostas_quest = {}
@@ -228,7 +228,7 @@ function verificar(nQuestao, resposta){
 function fimDoJogo(){
     instrucoes.textContent = "Fim do questionário"
     numQuestao.textContent = ""
-    img.setAttribute('src', "{% static 'Images/Thanks.jpg' %}")
+    img.setAttribute('src', "/static/Images/Thanks.jpg")
     atualizarBarra(5)
     
     // Conversão para JSON
