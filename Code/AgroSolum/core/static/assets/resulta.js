@@ -1,4 +1,4 @@
-const json_solos = 'Latossolos'
+
 const image      = ["/static/Images/Lato.png", "/static/Images/Argi.jpg", "/static/Images/Neo.jpg", 
 "/static/Images/Camb.jpg", "/static/Images/Cherno.jpg", "/static/Images/Espo.jpg", "/static/Images/Gle.jpeg"]
 //Imagem dos cards
@@ -63,6 +63,10 @@ let desc8 = document.querySelector("#card_descVIII")
 let fts8  = document.querySelector("#ft_cardVIII")
 let txt8  = document.querySelector("#txt_cardVIII")
 let val8  = document.querySelector("#value_cardVIII")
+
+
+const json_solos = localStorage.getItem('resposta_solo');
+
 
 if(json_solos == 'Latossolos'){
     //Resultados solo
