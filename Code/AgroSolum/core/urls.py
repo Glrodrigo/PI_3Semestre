@@ -7,4 +7,7 @@ urlpatterns = [
     path('cadastro', views.retorna_cadastro),
     path('sobre', views.retorna_sobre),
     path('pesquisar', views.retorna_pesquisar),
+    path('analise', views.retorna_analise),
+    path('cidade', views.retorna_cidade),
+    path('resultado', views.retorna_resultado),
 ]
