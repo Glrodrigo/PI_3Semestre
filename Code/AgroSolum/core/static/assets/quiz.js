@@ -90,8 +90,8 @@ const q5 = {
     alternativaD : "7001,00 a 15000,00 R$",
 }
 
-const imagens = ['', '', "{% static 'Images/Tipo.png' %}", "{% static 'Images/Nivel.png' %}", 
-"{% static 'Images/Season.png'%}", "{% static 'Images/Investir.jpg' %}"]
+const imagens = ['', '', "/static/Images/Tipo.png", "/static/Images/Nivel.png", 
+"/static/Images/Season.png", "/static/Images/Investir.jpg"]
 const questoes = [q0, q1, q2, q3, q4, q5]
 // Guardar respostas
 const respostas_quest = {}
@@ -198,7 +198,7 @@ function verificar(nQuestao, resposta){
     }else if(numeroDaQuestao == 4){
         chave = "season"
     }else{
-        chave = "valor"
+        chave = "value"
     }
     
     respostas_quest[chave] = respostaEscolhida
@@ -225,16 +225,31 @@ function verificar(nQuestao, resposta){
     desbloquearAlternativas()   
 }
 
-function fimDoJogo(){
+async function requisitaSolum(json_quest) {
+    let response = await fetch("http://localhost:8500/api_agrosolum/post_form", {
+                                    method: "POST",
+                                    headers: {'Content-Type': 'application/json'}, 
+                                    body: JSON.stringify(json_quest)
+                                }).then(res => res.text());
+    return response;
+}
+
+async function fimDoJogo(){
     instrucoes.textContent = "Fim do questionário"
     numQuestao.textContent = ""
-    img.setAttribute('src', "{% static 'Images/Thanks.jpg' %}")
+    img.setAttribute('src', "/static/Images/Thanks.jpg")
     atualizarBarra(5)
     
     // Conversão para JSON
-    const jsonQuest = JSON.stringify(respostas_quest)
-    jsonfinal =  save + jsonQuest
-    console.log(jsonfinal)
+    var cidade = JSON.parse(save)
+    respostas_quest['city'] = cidade.city
+
+    // faz a requisição na api
+    var resp = await requisitaSolum(respostas_quest)
+
+    console.log(resp)
+
+    localStorage.setItem('resposta_solo', resp);  
 
     aviso.textContent = "Agradecemos a suas respostas"
     setTimeout(function(){
@@ -256,4 +271,6 @@ function fimDoJogo(){
     articleQuestoes.style.display = 'none'
     articleBut.style.display      = 'none'
     articleButt.style.display     = 'none'
+
+    window.location.href = "/resultado"
 }

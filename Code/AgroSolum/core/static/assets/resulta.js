@@ -1,11 +1,11 @@
-const json_solos = 'Latossolos'
-const image      = ["{% static 'Images/Lato.png'%}", "{% static 'Images/Argi.jpg' %}", "{% static 'Images/Neo.jpg' %}", 
-"{% static 'Images/Camb.jpg' %}", "{% static 'Images/Cherno.jpg' %}", "{% static 'Images/Espo.jpg' %}", "{% static 'Images/Gle.jpeg"]
+
+const image      = ["/static/Images/Lato.png", "/static/Images/Argi.jpg", "/static/Images/Neo.jpg", 
+"/static/Images/Camb.jpg", "/static/Images/Cherno.jpg", "/static/Images/Espo.jpg", "/static/Images/Gle.jpeg"]
 //Imagem dos cards
-const product    = ["{% static 'Images/Cafe.jpg' %}", "{% static 'Images/Milho.jpg' %}", "{% static 'Images/Arroz.jpg' %}", "{% static 'Images/Gira.jpg' %}", "{% static 'Images/Maca.jpg' %}", 
-"{% static 'Images/Uva.jpg' %}", "{% static 'Images/Beterraba.jpg' %}", "{% static 'Images/Laranja.jpg' %}", "{% static 'Images/Aveia.jpg' %}", "{% static 'Images/Soja.jpg' %}", 
-"{% static 'Images/Manga.jpg' %}", "{% static 'Images/Banana.jpg' %}", "{% static 'Images/Algodao.jpg' %}", "{% static 'Images/Cana.jpg' %}", "{% static 'Images/Trigos.jpg' %}", 
-"{% static 'Images/Lentilha.jpg' %}", "{% static 'Images/Edamame.jpg' %}", "{% static 'Images/Feijao.jpeg' %}", "{% static 'Images/Abacaxi.jpg' %}"]
+const product    = ["/static/Images/Cafe.jpg", "/static/Images/Milho.jpg", "/static/Images/Arroz.jpg", "/static/Images/Gira.jpg", "/static/Images/Maca.jpg", 
+"/static/Images/Uva.jpg", "/static/Images/Beterraba.jpg", "/static/Images/Laranja.jpg", "/static/Images/Aveia.jpg", "/static/Images/Soja.jpg", 
+"/static/Images/Manga.jpg", "/static/Images/Banana.jpg", "/static/Images/Algodao.jpg", "/static/Images/Cana.jpg", "/static/Images/Trigos.jpg", 
+"/static/Images/Lentilha.jpg", "/static/Images/Edamame.jpg", "/static/Images/Feijao.jpeg", "/static/Images/Abacaxi.jpg"]
 
 //Resultados solo
 let img          = document.querySelector('#photo')
@@ -63,6 +63,10 @@ let desc8 = document.querySelector("#card_descVIII")
 let fts8  = document.querySelector("#ft_cardVIII")
 let txt8  = document.querySelector("#txt_cardVIII")
 let val8  = document.querySelector("#value_cardVIII")
+
+
+const json_solos = localStorage.getItem('resposta_solo');
+
 
 if(json_solos == 'Latossolos'){
     //Resultados solo
