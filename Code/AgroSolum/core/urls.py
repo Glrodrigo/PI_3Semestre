@@ -10,4 +10,5 @@ urlpatterns = [
     path('analise', views.retorna_analise),
     path('cidade', views.retorna_cidade),
     path('resultado', views.retorna_resultado),
+    path('resultado_DB', views.retorna_resultadoDB),
 ]

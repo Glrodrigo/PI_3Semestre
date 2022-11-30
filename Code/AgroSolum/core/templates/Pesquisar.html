@@ -41,7 +41,8 @@
 
                 </div>
                 <section class="find">
-                    <form method="POST" action="Resultado.php">
+                    <form method="POST" action="/resultado_DB">
+                      {% csrf_token %}
                       <input type="text" id="find-text" name="lupa" placeholder="Pesquisar..." name="Search" required autofocus/>
                       <input type="submit" id="buttonS" value=""/>
                     </form>

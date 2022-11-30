@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Produtos
 
 # Create your views here.
 
@@ -25,3 +26,7 @@ def retorna_cidade(request):
 
 def retorna_resultado(request):
     return render(request, 'Resulta_API.html')
+
+def retorna_resultadoDB(request):
+    produto = Produtos.objects.all()
+    return render(request, "Resultado_DB.html", {"produto": produto})
