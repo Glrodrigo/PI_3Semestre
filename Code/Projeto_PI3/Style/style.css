@@ -211,7 +211,7 @@ li:hover{
 
 .centro{
     text-align: center;
-    background-color: #b69492;
+    background-color: #95d654;
     padding: 10px;
 }
 
@@ -260,7 +260,7 @@ li:hover{
 }
 
 #marketplace{
-    background-image: url(../Images/bg/bg-leafs.svg);
+    background-color: white;
     margin-left: 0px;
     margin-right: 0px;
     padding-top: 20px;
@@ -431,21 +431,21 @@ li:hover{
 }
 
 .loupe{
-    background-image: url(../Images/bg/bg-leafs.svg);
+    background-color: white;
     width: 960px;
     margin: auto;
     height: 1050px;
 }
 
 .loupeI{
-    background-image: url(../Images/bg-leafs.svg);
+    background-color: white;
     padding: 70px;
     margin: auto;
     height: 1050px;
 }
 
 .loupe2{
-    background-image: url(../Images/bg/bg-leafs.svg);
+    background-color: white;
     width: 960px;
     margin: auto;
     padding-bottom: 30px;
@@ -498,6 +498,10 @@ li:hover{
     background-image: url(../Images/Basic.jpg);
     margin-right: 200px;
     border: none;
+}
+
+.btn-primary {
+    color: #192f1b;
 }
 
 #buttonS:hover{
