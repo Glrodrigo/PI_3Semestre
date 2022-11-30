@@ -68,7 +68,7 @@ let val8  = document.querySelector("#value_cardVIII")
 const json_solos = localStorage.getItem('resposta_solo');
 
 
-if(json_solos == 'Latossolos'){
+if(json_solos == '"Latossolos"'){
     //Resultados solo
     photo.setAttribute('src', image[0])
     names.textContent   = "Latossolos"
@@ -112,7 +112,7 @@ if(json_solos == 'Latossolos'){
     fts8.setAttribute('src', product[13])
     txt8.textContent   = "Mudas de Cana-de-açúcar(1,0kg)"
     val8.textContent   = "R$ 49,90"
-}else if(json_solos == 'Argissolos'){
+}else if(json_solos == '"Argissolos"'){
     photo.setAttribute('src', image[1])
     names.textContent   = "Argissolo"
     texture.textContent = "Argilosa, com alguns granulos"
@@ -143,7 +143,7 @@ if(json_solos == 'Latossolos'){
     fts8.setAttribute('src', product[16])
     txt8.textContent   = "Sementes de Edamame(1,0kg)"
     val8.textContent   = "R$ 79,90"
-}else if(json_solos == 'Neossolos'){
+}else if(json_solos == '"Neossolos"'){
     photo.setAttribute('src', image[2])
     names.textContent   = "Neossolo"
     texture.textContent = "Arenosa, com pequenos grãos"
@@ -178,7 +178,7 @@ if(json_solos == 'Latossolos'){
     txt7.textContent   = "Sementes de Algodão(1,0kg)"
     val7.textContent   = "R$ 50,00"
     //Resultados card 8 não foi alterado
-}else if(json_solos == 'Cambissolos'){
+}else if(json_solos == '"Cambissolos"'){
     photo.setAttribute('src', image[3])
     names.textContent   = "Cambissolo"
     texture.textContent = "Arenosa, e fina"
@@ -208,7 +208,7 @@ if(json_solos == 'Latossolos'){
     //Sem resultados card 5, 6, 7 e 8
     sell.style.display     = "none"
     container.style.height = "600px"
-}else if(json_solos == 'Chernossolos'){
+}else if(json_solos == '"Chernossolos"'){
     photo.setAttribute('src', image[4])
     names.textContent   = "Chernossolos"
     texture.textContent = "Argilosa"
@@ -234,7 +234,7 @@ if(json_solos == 'Latossolos'){
     cardfiv.style.display  = "none"
     sell.style.display     = "none"
     container.style.height = "600px"
-}else if(json_solos == 'Espodossolos'){
+}else if(json_solos == '"Espodossolos"'){
     photo.setAttribute('src', image[5])
     names.textContent   = "Espodossolos"
     texture.textContent = "Arenosa"
@@ -247,7 +247,7 @@ if(json_solos == 'Latossolos'){
     sell.style.display     = "none"
     empty.style.display    = "block"
     container.style.height = "500px"
-}else if(json_solos == 'Gleissolos'){
+}else if(json_solos == '"Gleissolos"'){
     photo.setAttribute('src', image[6])
     names.textContent   = "Gleissolos"
     texture.textContent = "Argilosa"
