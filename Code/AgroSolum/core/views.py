@@ -30,3 +30,6 @@ def retorna_resultado(request):
 def retorna_resultadoDB(request):
     produto = Produtos.objects.all()
     return render(request, "Resultado_DB.html", {"produto": produto})
+
+def retorna_estatisticas(request):
+    return render(request, 'estatisticas.html')
