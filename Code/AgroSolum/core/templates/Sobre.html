@@ -17,7 +17,8 @@
             <a href="/"><img src="{% static 'Images/Icon.png' %}"></a>
         </div>
         <section class="find1">
-          <form method="POST" action="Resultado.php">
+          <form method="POST" action="/resultado_DB">
+            {% csrf_token %}
             <input type="text" id="find1-text" name="lupa" placeholder="Pesquisar..." name="Search" required autofocus/>
             <input type="submit" id="buttonSS" value=""/>
           </form>

@@ -17,7 +17,8 @@
             <a href="/"><img src="{% static 'Images/Icon.png' %}"></a>
         </div>
         <section class="find1">
-          <form method="POST" action="Pages/Resultado.php">
+          <form method="POST" action="/resultado_DB">
+            {% csrf_token %}
             <input type="text" id="find1-text" name="lupa" placeholder="Pesquisar..." name="Search" required autofocus/>
             <input type="submit" id="buttonSS" value=""/>
           </form>
@@ -96,7 +97,7 @@
                       <p>Indicação de melhores cultivares</p>
                     </div>
                     <div class="icon">
-                      <img src="{% static 'Images/Set.png' %}">
+                      <img src="{% static 'Images/indicacao.svg' %}">
                     </div>
                   </div>
                   <div class="subdiv">
@@ -112,10 +113,11 @@
                       <p>Relatório para gerar insigths nas empresas</p>
                     </div>
                     <div class="icon">
-                      <img src="{% static 'Images/Paper.jpg' %}">
+                      <img src="{% static 'Images/dashboard.png' %}">
                     </div>
                   </div>       
-                  <a href="#" id="button" class="btn btn-primary">Fazer análise</a>
+                  <a href="/cidade" id="button" class="btn btn-primary">Fazer análise</a>
+                  <a href="#" id="buttonn" class="btn btn-primary">Ver Relatório</a>
                 </div>
             </section>
             <section id="marketplace" class="row">
@@ -130,7 +132,7 @@
                             <div class="business">
                                 <div class="business-body">
                                   <p class="business-text">Quer descobrir qual é o melhor plantio indicado para o seu negócio?</p>
-                                  <a href="#" id="button3" class="btn btn-primary" >Saiba mais</a>
+                                  <a href="/cidade" id="button3" class="btn btn-primary" >Fazer análise</a>
                                 </div>
                             </div>
                         </div>
@@ -145,7 +147,7 @@
                             <div class="card-body">
                               <p class="card-text">Sementes de Girassol (2,5kg)</p>
                               <h5 class="card-title">R$ 70,00</h5>
-                              <a href="#" >Ver mais</a>
+                              <a href="/pesquisar" >Ver mais</a>
                             </div>
                         </div>
                         <div class="cards">
@@ -154,7 +156,7 @@
                             <div class="card-body">
                               <p class="card-text">Sementes de Café Arábica (1,5kg)</p>
                               <h5 class="card-title">R$ 35,70</h5>
-                              <a href="#" >Ver mais</a>
+                              <a href="/pesquisar" >Ver mais</a>
                             </div>
                         </div>
                         <div class="cards">
@@ -163,11 +165,11 @@
                             <div class="card-body">
                               <p class="card-text">Sementes de Milho (1,0kg)</p>
                               <h5 class="card-title">R$ 31,98</h5>
-                              <a href="#" >Ver mais</a>
+                              <a href="/pesquisar" >Ver mais</a>
                             </div>
                         </div>
                     </div>
-                    <a href="#" id="button4" class="btn btn-primary" >Ver todos os produtos</a>                  
+                    <a href="/pesquisar" id="button4" class="btn btn-primary" >Ver todos os produtos</a>                  
                 </div>
             </section>
             <section class="map">

@@ -44,7 +44,7 @@ li:hover{
 
 .centro{
     text-align: center;
-    background-color: #b69492;
+    background-color:#95d654;
     padding: 10px;
 }
 
@@ -125,7 +125,7 @@ li:hover{
 }
 
 main{
-    background-color: white;
+    background-image: url(../Images/Leafs.png);
     background-size: cover;
     height: 145vh;
     margin: auto;
@@ -133,7 +133,7 @@ main{
 }
 
 .mainC{
-    background-color: white;
+    background-image: url(../Images/Leafs.png);
     background-size: cover;
     height: 120vh;
     margin: auto;

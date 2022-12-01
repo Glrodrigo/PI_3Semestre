@@ -30,7 +30,7 @@ header{
     display:flex;
     flex-direction:row;
     justify-content:space-around;
-    padding: 40px;
+    padding: 30px;
 }
 
 .subdiv .txt{
@@ -54,7 +54,7 @@ li:hover{
 }
 
 .map li:hover{
-    color: #b69492;
+    color:#95d654;
 }
 
 .nav img{
@@ -143,14 +143,14 @@ li:hover{
 
 .agro{
     border-right: solid;
-    border-color:#b69492;
+    border-color:#95d654;
     padding-right: 50px;
     padding-top: 15px;
 }
 
 .suport{
     border-right: solid;
-    border-color:#b69492;
+    border-color:#95d654;
     padding-right: 50px;
     padding-top: 15px;
 }
@@ -197,7 +197,7 @@ li:hover{
 }
 
 .map h5{
-    color: #b69492;
+    color:#95d654;
     padding-left: 32px;
 }
 
@@ -218,7 +218,7 @@ li:hover{
 
 .centro{
     text-align: center;
-    background-color: #b69492;
+    background-color:#95d654;
     padding: 10px;
 }
 
@@ -267,7 +267,7 @@ li:hover{
 }
 
 #marketplace{
-    background-image: url(../Images/Fundo.jpg);
+    background-image: url(../Images/Leafs.png);
     margin-left: 0px;
     margin-right: 0px;
     padding-top: 20px;
@@ -374,7 +374,7 @@ li:hover{
 }
 
 #buttonn{
-    background-color: #95d654;
+    background-color:#192f1b;
     margin-left: 43%;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -382,11 +382,18 @@ li:hover{
     padding: 10px;
     padding-left: 40px;
     padding-right: 40px;
-    border-color: #192f1b;
+    border-color: #95d654;
 }
 
-#button:hover, #buttonn:hover{
+#button:hover{
     background-color: #01f81621;
+    transition: 3ms;
+    color:#e0f8fc;
+}
+
+#buttonn:hover{
+    background-color:#01f81621;
+    border-color: #192f1b;
     transition: 3ms;
 }
 
