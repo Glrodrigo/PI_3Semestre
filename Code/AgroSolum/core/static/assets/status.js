@@ -5,23 +5,33 @@ google.charts.setOnLoadCallback(drawChart);
 
 function drawStuff() {
     var data = new google.visualization.arrayToDataTable([
-        ['Move', 'Percentage'],
-        ["King's pawn (e4)", 44],
-        ["Queen's pawn (d4)", 31],
-        ["Knight to King 3 (Nf3)", 12],
-        ["Queen's bishop pawn (c4)", 10],
-        ['Other', 3]
+        ['Região', 'Pesquisas'],
+        ["Araçatuba", 0],
+        ["Araraquara", 31],
+        ["Assis", 12],
+        ["Bauru", 10],
+        ["Campinas", 44],
+        ["Itapetininga", 31],
+        ["Litoral Sul Paulista", 12],
+        ["São José do Rio Preto", 10],
+        ["Metropolitana de São Paulo", 44],
+        ["Ribeirão Preto", 31],
+        ["Piracicaba", 12],
+        ["Presidente Prudente", 10],
+        ["Marília", 44],
+        ["Macro Metropolitana Paulista", 31],
+        ["Vale do Paraíba Paulista", 12]
     ]);
 
     var options = {
         width: 800,
         legend: { position: 'none' },
         chart: {
-        title: 'Chess opening moves',
-        subtitle: 'popularity by percentage' },
+        title: 'Análise por região',
+        subtitle: 'Quantidade de análises vindas das regiões paulistas.' },
         axes: {
         x: {
-            0: { side: 'top', label: 'White to move'} // Top x-axis.
+            0: { side: 'bottom', label: 'Posicione o cursor do mouse para melhor identificação.'} // Top x-axis.
         }
         },
         bar: { groupWidth: "90%" }
@@ -36,16 +46,19 @@ function drawStuff() {
 function drawChart() {
 
     var data = google.visualization.arrayToDataTable([
-        ['Task', 'Hours per Day'],
-        ['Work',     11],
-        ['Eat',      2],
-        ['Commute',  2],
-        ['Watch TV', 2],
-        ['Sleep',    7]
+        ['Semente', 'clicks'],
+        ['Arroz',     11],
+        ['Café',      21],
+        ['Girassol',  1],
+        ['Maçã', 2],
+        ['Milho',    7],
+        ['Uva',    5],
+        ['Beterraba',    6],
+        ['Laranja',    8]
     ]);
 
     var options = {
-        title: 'My Daily Activities'
+        title: 'Maiores interesses por click'
     };
 
     var chart = new google.visualization.PieChart(document.getElementById('piechart'));
