@@ -125,7 +125,7 @@ li:hover{
 }
 
 main{
-    background-image: url(../Images/Leafs.png);
+    background-image: url(../Images/bg-leafs.svg);
     background-size: cover;
     height: 145vh;
     margin: auto;
@@ -133,7 +133,7 @@ main{
 }
 
 .mainC{
-    background-image: url(../Images/Leafs.png);
+    background-image: url(../Images/bg-leafs.svg);
     background-size: cover;
     height: 120vh;
     margin: auto;
