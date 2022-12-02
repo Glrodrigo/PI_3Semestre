@@ -205,6 +205,8 @@ function verificar(nQuestao, resposta){
     //console.log(respostas_quest)
 
     instrucoes.textContent = "Salvando..."
+    
+    
 
     //Bloquear escolhas
     bloquearAlternativas()
@@ -230,7 +232,7 @@ async function requisitaSolum(json_quest) {
                                     method: "POST",
                                     headers: {'Content-Type': 'application/json'}, 
                                     body: JSON.stringify(json_quest)
-                                }).then(res => res.text());
+                                }).then(res => res.text()).catch(error => error.text());
     return response;
 }
 
@@ -246,8 +248,9 @@ async function fimDoJogo(){
 
     // faz a requisição na api
     var resp = await requisitaSolum(respostas_quest)
-
-    console.log(resp)
+    
+    if (resp != '{"detail":"Cidade não encontrada"}'){
+        console.log(resp)
 
     localStorage.setItem('resposta_solo', resp);  
 
@@ -273,4 +276,25 @@ async function fimDoJogo(){
     articleButt.style.display     = 'none'
 
     window.location.href = "/resultado"
+    }else{
+
+    a.textContent = ""
+    b.textContent = ""
+    c.textContent = ""
+    d.textContent = ""
+
+    a.setAttribute('value', '0')
+    b.setAttribute('value', '0')
+    c.setAttribute('value', '0')
+    d.setAttribute('value', '0')
+
+    //Esconder article
+    articleQuestoes.style.display = 'none'
+    articleBut.style.display      = 'none'
+    articleButt.style.display     = 'none'
+
+    window.location.href = "/erro"
+    }
+        
+    
 }
