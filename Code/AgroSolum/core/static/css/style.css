@@ -400,6 +400,25 @@ li:hover{
     color: #e0f8fc;
 }
 
+.buttonError{
+    background-color:#192f1b;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-color: #95d654;
+    color: #95d654;
+}
+
+.buttonError:hover{
+    background-color:#01f81621;
+    border-color: #192f1b;
+    transition: 3ms;
+    color: #e0f8fc;
+}
+
 #buttonA:hover{
     background-color: #01f81621;
     color: #203b22;

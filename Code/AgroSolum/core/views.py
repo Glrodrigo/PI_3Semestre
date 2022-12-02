@@ -33,3 +33,6 @@ def retorna_resultadoDB(request):
 
 def retorna_estatisticas(request):
     return render(request, 'estatisticas.html')
+
+def retorna_erro(request):
+    return render(request, 'error.html')

@@ -12,4 +12,5 @@ urlpatterns = [
     path('resultado', views.retorna_resultado),
     path('resultado_DB', views.retorna_resultadoDB),
     path('relatorios', views.retorna_estatisticas),
+    path('erro', views.retorna_erro),
 ]
