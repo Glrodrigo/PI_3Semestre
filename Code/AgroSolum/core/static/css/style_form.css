@@ -140,6 +140,15 @@ main{
     width: 960px;
 }
 
+.data_mongo{
+    background-image: url(../Images/bg-leafs.svg);
+    height: 208vh;
+    margin: auto;
+    width: 960px;
+}
+
+
+
 .container{
     font-family: 'Poppins', sans-serif;
     height: 138vh;  

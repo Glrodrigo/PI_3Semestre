@@ -21,7 +21,8 @@
             <a href="/"><img src="{% static 'Images/Icon.png' %}"></a>
         </div>
         <section class="find1">
-          <form method="POST" action="Pages/Resultado.php">
+          <form method="POST" action="/resultado_DB">
+            {% csrf_token %}
             <input type="text" id="find1-text" name="lupa" placeholder="Pesquisar..." name="Search" required autofocus/>
             <input type="submit" id="buttonSS" value=""/>
           </form>
@@ -30,7 +31,6 @@
             <ul>
                 <a href="/cidade"><li>Análise do solo</li></a>
                 <a href="/pesquisar"><li>Marketplace</li></a>
-                <a href="/relatorios"><li>Relatórios</li></a>
                 <a href="/sobre"><li>Sobre</li></a>
                 <li id="perf" class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -51,13 +51,13 @@
 
           <h1>Estatísticas de usuários</h1>
           <br><br>
-          <h4> Sua empresa está interessada em investir em alguma região ou em alguma semente? nosso usuários podem ajudar! </h4>
+          <h4> Sua empresa está interessada em investir em alguma região ou em alguma semente? Nossos usuários podem ajudar! </h4>
 
           <br><br>
           
           <div id="top_x_div" style="width: 800px; height: 600px;"></div>
 
-          <div id="piechart" style="width: 900px; height: 500px;"></div>
+          <div id="piechart" style="width: 800px; height: 500px; padding-left: 18%;"></div>
 
         </center>
       <br><br>

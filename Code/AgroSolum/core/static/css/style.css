@@ -478,7 +478,7 @@ li:hover{
 }
 
 .loupeI{
-    background-color: white;
+    background-image: url(../Images/bg-leafs.svg);
     padding: 70px;
     margin: auto;
     height: 1050px;
