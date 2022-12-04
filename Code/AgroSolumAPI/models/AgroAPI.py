@@ -45,6 +45,7 @@ class AgroAPI(AgroMongo):
         ground_list = []
         for solo in self.list_solum():
             if self.region in solo['regiao']:
+                self.update_region_search({"region":self.region})
                 if self.color in solo['cor']:
                     if self.texture in solo['textura']:
                         if self.humidity == solo['umidade']:
