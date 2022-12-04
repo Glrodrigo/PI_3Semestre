@@ -1,12 +1,13 @@
 from fastapi import HTTPException
-from models.request_model import GroundInfo
-from models.database import json_solos
+from models.AgroRequest import GroundInfo
+from models.AgroDB import AgroMongo
 import requests
 import json
 
-class AgroAPI:
+class AgroAPI(AgroMongo):
 
     def __init__(self, form: GroundInfo):
+        super().__init__()
         self.color = form.color.lower()
         self.texture = form.texture.lower()
         self.humidity = self.verify_humidity(form.humidity)
@@ -42,7 +43,7 @@ class AgroAPI:
 
     def verify_solum(self) -> str:
         ground_list = []
-        for solo in json_solos:
+        for solo in self.list_solum():
             if self.region in solo['regiao']:
                 if self.color in solo['cor']:
                     if self.texture in solo['textura']:
@@ -50,16 +51,5 @@ class AgroAPI:
                             ground_list.append(solo['nome_solo'])
         
         return ground_list[0]
-
-    #def verify_image(self, ground_list: list) -> list:
-    #    len_list = len(ground_list)
-    #
-    #    if len_list>1:
-    #        for item in json_solos:
-    #            print(item)
-    #            if self.image == item['imagem']:
-    #                return item['nome_solo']
-    #    else:
-    #        return ground_list[0]
 
             
