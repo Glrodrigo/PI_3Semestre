@@ -12,6 +12,7 @@ class AgroAPI(AgroMongo):
         self.texture = form.texture.lower()
         self.humidity = self.verify_humidity(form.humidity)
         self.region = self.verify_city(form.city)
+        
 
     def verify_humidity(self, humidity: int) -> int:
         if humidity<1:
@@ -37,6 +38,7 @@ class AgroAPI(AgroMongo):
 
         if local_muni['regiao-imediata']['regiao-intermediaria']['nome'] in lista_regioes:
             regiao = local_muni['regiao-imediata']['regiao-intermediaria']['nome']
+            self.update_region_search(regiao)
             return regiao
         else:
             raise HTTPException(status_code = 404, detail = "Solo não encontrado")

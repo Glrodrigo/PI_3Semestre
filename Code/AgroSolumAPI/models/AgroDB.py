@@ -19,6 +19,12 @@ class AgroMongo:
             names.append(solo['nome_solo'])
         return names
 
+    def list_seed_names(self):
+        names = []
+        for solo in self.produtos.find():
+            names.append(solo['semente'])
+        return names
+
     def list_region_names(self):
         names = []
         for region in self.regioes.find():
@@ -26,14 +32,21 @@ class AgroMongo:
         return names
 
     def list_region_info(self):
-        regions = []
+        regions = [['Região', 'Pesquisas']]
         for region in self.regioes.find():
-            regions.append({"region": region['Regiao'], "searches": region['Pesquisas']})
+            regions.append([region['Regiao'], region['Pesquisas']])
         return regions
+
+    def list_seed_info(self):
+        seeds = [['Semente', 'clicks']]
+        for seed in self.produtos.find():
+            seeds.append([seed['semente'], seed['clicks']])
+        return seeds
 
     def update_region_search(self, region: str):
         if region in self.list_region_names():
             finded = self.regioes.find_one({'Regiao':region})
+            print(finded)
             if self.count_len_find(finded) > 0:
                 new_searches = finded['Pesquisas'] + 1
                 newvalues = { "$set": { "Pesquisas": new_searches } }
@@ -41,13 +54,29 @@ class AgroMongo:
                 new_values = self.regioes.find_one({'Regiao':region})
                 return {"Regiao": new_values['Regiao'], "Pesquisas": new_values['Pesquisas']}
             else:
-                raise HTTPException(status_code=400, detail=f"not found '{region}'.")
+                raise HTTPException(status_code=404, detail=f"not found '{region}'.")
 
         else:
-            raise HTTPException(status_code=400, detail=f"not found '{region}'.")
+            raise HTTPException(status_code=404, detail=f"not found '{region}'.")
 
     def count_len_find(self, find):
         counter = 0
         for item in find:
             counter += 1
         return counter
+
+    def update_seeds(self, seed: str):
+        if seed in self.list_seed_names():
+            finded = self.produtos.find_one({'semente':seed})
+            if self.count_len_find(finded) > 0:
+                new_searches = finded['clicks'] + 1
+                newvalues = { "$set": { "clicks": new_searches } }
+                self.produtos.update_one(finded, newvalues)
+                new_values = self.produtos.find_one({'semente':seed})
+                return {"semente": new_values['semente'], "clicks": new_values['clicks']}
+            else:
+                raise HTTPException(status_code=404, detail=f"not found '{seed}'.")
+
+        else:
+            raise HTTPException(status_code=404, detail=f"not found '{seed}'.")
+
