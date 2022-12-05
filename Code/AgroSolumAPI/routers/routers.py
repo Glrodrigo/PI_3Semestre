@@ -27,6 +27,7 @@ def list_seeds():
 @routers_agrosolum.post('/post_form')
 def post_form(form: GroundInfo):
     agro = AgroAPI(form)
+    print(form)
     solos = agro.verify_solum()
     return solos
 

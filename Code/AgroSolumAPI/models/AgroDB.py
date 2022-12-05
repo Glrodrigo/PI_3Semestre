@@ -46,6 +46,7 @@ class AgroMongo:
     def update_region_search(self, region: str):
         if region in self.list_region_names():
             finded = self.regioes.find_one({'Regiao':region})
+            print(finded)
             if self.count_len_find(finded) > 0:
                 new_searches = finded['Pesquisas'] + 1
                 newvalues = { "$set": { "Pesquisas": new_searches } }
