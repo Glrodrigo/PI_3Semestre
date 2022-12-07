@@ -410,13 +410,15 @@ li:hover{
     padding-right: 40px;
     border-color: #95d654;
     color: #95d654;
+    text-decoration: none;
 }
 
 .buttonError:hover{
     background-color:#01f81621;
+    border: solid;
     border-color: #192f1b;
     transition: 3ms;
-    color: #e0f8fc;
+    color:#192f1b;
 }
 
 #buttonA:hover{
@@ -916,4 +918,15 @@ section.testimonials .section-heading {
     font-size: 25px;
     padding-top: 150px;
     padding-bottom: 150px;
+}
+
+.data_erro{
+    background-image: url(../Images/Leafs.png);
+    height: 78vh;
+    margin: auto;
+    width: 960px;
+}
+
+.data_erro img{
+    height: 240px;
 }

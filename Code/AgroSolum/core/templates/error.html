@@ -20,7 +20,8 @@
             <a href="/"><img src="{% static 'Images/Icon.png' %}"></a>
         </div>
         <section class="find1">
-          <form method="POST" action="Pages/Resultado.php">
+          <form method="POST" action="/resultado_DB">
+            {% csrf_token %}
             <input type="text" id="find1-text" name="lupa" placeholder="Pesquisar..." name="Search" required autofocus/>
             <input type="submit" id="buttonSS" value=""/>
           </form>
@@ -43,14 +44,14 @@
             </ul>
         </div>
     </header>
-    <main class="data_mongo">
+    <main class="data_erro">
       <br><br>
         <center>
 
             <img src="{% static 'Images/ERROR.png' %}"></a>
 
             <br><br>
-            <h1 id="mensagem_erro">Erro</h1>
+            <h1 id="mensagem_erro">Erro na comunicação com o servidor</h1>
             <br><br>
 
             <a href="/index" class="buttonError" class="btn btn-primary">Voltar</a>
