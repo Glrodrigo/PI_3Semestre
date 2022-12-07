@@ -922,11 +922,12 @@ section.testimonials .section-heading {
 
 .data_erro{
     background-image: url(../Images/Leafs.png);
-    height: 78vh;
+    height: 82vh;
     margin: auto;
     width: 960px;
 }
 
 .data_erro img{
     height: 240px;
+    margin-top: 30px;
 }
