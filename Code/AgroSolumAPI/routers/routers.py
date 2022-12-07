@@ -1,5 +1,5 @@
 from .config import routers_agrosolum
-from models.AgroRequest import GroundInfo
+from models.AgroRequest import *
 from models.AgroAPI import AgroAPI
 from models.AgroDB import AgroMongo
 from fastapi import Body
@@ -32,15 +32,17 @@ def post_form(form: GroundInfo):
     return solos
 
 @routers_agrosolum.post('/update_region')
-def update_region(region: str = Body(...)): 
+def update_region(region: Region): 
     agro = AgroMongo()
-    updated = agro.update_region_search(region)
+    updated = agro.update_region_search(region.region)
+    print(updated)
     return updated
     
 @routers_agrosolum.post('/update_seed_clicks')
-def update_seeds(seed: str = Body(...)): 
+def update_seeds(seed: Seed): 
     agro = AgroMongo()
-    updated = agro.update_seeds(seed)
+    updated = agro.update_seeds(seed.seed)
+    print(updated)
     return updated
     
 

@@ -64,6 +64,13 @@ let fts8  = document.querySelector("#ft_cardVIII")
 let txt8  = document.querySelector("#txt_cardVIII")
 let val8  = document.querySelector("#value_cardVIII")
 
+async function clickSeed(seed) {
+    await fetch("http://localhost:8500/api_agrosolum/update_seed_clicks", {
+        method: "POST",
+        headers: {'Content-Type': 'application/json'}, 
+        body: {"seed":seed}
+    })
+}
 
 const json_solos = localStorage.getItem('resposta_solo');
 

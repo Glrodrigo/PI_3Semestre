@@ -8,3 +8,10 @@ class GroundInfo(BaseModel):
     city: str
     season: Union[str, None] = None
     value: Union[str, None] = None
+
+
+class Seed(BaseModel):
+    seed: str
+
+class Region(BaseModel):
+    region: str
