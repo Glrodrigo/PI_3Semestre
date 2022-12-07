@@ -44,14 +44,15 @@ class AgroAPI(AgroMongo):
             raise HTTPException(status_code = 404, detail = "Solo não encontrado")
 
     def verify_solum(self) -> str:
-        ground_list = []
-        for solo in self.list_solum():
-            if self.region in solo['regiao']:
-                if self.color in solo['cor']:
-                    if self.texture in solo['textura']:
-                        if self.humidity == solo['umidade']:
-                            ground_list.append(solo['nome_solo'])
-        
-        return ground_list[0]
+        try:
+            ground_list = []
+            for solo in self.list_solum():
+                if self.region in solo['regiao']:
+                    if self.color in solo['cor']:
+                        if self.texture in solo['textura']:
+                            if self.humidity == solo['umidade']:
+                                ground_list.append(solo['nome_solo'])
 
-            
+            return ground_list[0]
+        except:
+            raise HTTPException(status_code = 404, detail = "Solo não encontrado")
