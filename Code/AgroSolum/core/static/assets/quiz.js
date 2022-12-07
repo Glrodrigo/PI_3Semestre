@@ -248,8 +248,8 @@ async function fimDoJogo(){
 
     // faz a requisição na api
     var resp = await requisitaSolum(respostas_quest)
-    
-    if (resp != '{"detail":"Cidade não encontrada"}'){
+    console.log(resp)
+    if (resp != '{"detail":"Cidade não encontrada"}' && resp != '{"detail":"Solo não encontrado"}'){
         console.log(resp)
 
     localStorage.setItem('resposta_solo', resp);  
