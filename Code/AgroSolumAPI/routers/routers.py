@@ -2,7 +2,6 @@ from .config import routers_agrosolum
 from models.AgroRequest import *
 from models.AgroAPI import AgroAPI
 from models.AgroDB import AgroMongo
-from fastapi import Body
 
 @routers_agrosolum.get('/list_solum_name')
 def list_solum_name(): 
