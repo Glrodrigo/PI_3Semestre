@@ -18,20 +18,19 @@ uvicorn main:app --port 8500
 
 ## Requisição:
 
-#### <li> Endpoint: http://127.0.0.1:8500/api_agrosolum/post_form </li>
+#### http://127.0.0.1:8500/api_agrosolum
 
-#### <li> Modelo de requisição: </li>
-    
-```python
-{
-    "color": "vermelho",
-    "texture": "argilosa",
-    "humidity": 2,
-    "city": "Pirassununga",
-    "season": "",
-    "value": ""
-}
-```
+####  Rotas
+
+##### - Lista nomes dos solos: '/list_solum_name'
+##### - Lista nomes das sementes: '/list_seed_name'
+##### - Lista número de média de rendas por requisição: '/list_money'
+##### - Lista nomes dos solos: '/list_regions'
+##### - Lista nomes dos solos: '/list_seeds'
+##### - Posta dados para verificar solo: '/post_form'
+##### - Atualiza número de tipo de região recebido: '/update_region'
+##### - Atualiza número de sementes recebido: '/update_seed_clicks'
+
 <br>
 
 <center>
