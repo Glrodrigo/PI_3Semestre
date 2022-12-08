@@ -27,6 +27,7 @@ def list_seeds():
 def post_form(form: GroundInfo):
     agro = AgroAPI(form)
     print(form)
+    agro.save_form_request(form)
     solos = agro.verify_solum()
     return solos
 

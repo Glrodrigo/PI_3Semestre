@@ -9,6 +9,7 @@ class AgroMongo:
         self.solos = self.db['solos']
         self.regioes = self.db['regioes']
         self.produtos = self.db['produtos']
+        self.resultados = self.db['resultados']
 
     def list_solum(self):
         return self.solos.find()
@@ -58,6 +59,15 @@ class AgroMongo:
 
         else:
             raise HTTPException(status_code=404, detail=f"not found '{region}'.")
+
+    def save_form_request(self, form):
+        try:
+            form_db = form.__dict__
+            res = self.resultados.insert_one(form_db)
+            print("inserted: ", res)
+        except Exception as e:
+            print(e)
+            pass
 
     def count_len_find(self, find):
         counter = 0
