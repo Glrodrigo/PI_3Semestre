@@ -72,6 +72,7 @@ O projeto foi estruturado pensando em auxiliar os pequenos e médios produtores 
     
 <h2> Desenvolvimento </h2>
 
+![MongoDB](https://img.shields.io/badge/-MongoDB-green)
 ![SQLite](https://img.shields.io/badge/-SQLite-blue)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Django?style=flat-square)
 ![HTML5](https://img.shields.io/badge/-HTML5-red)
