@@ -28,7 +28,8 @@ def retorna_resultado(request):
     return render(request, 'Resulta_API.html')
 
 def retorna_resultadoDB(request):
-    produto = Produtos.objects.all()
+    item = request.POST['lupa']
+    produto = Produtos.objects.all().filter(descricao__contains=item)
     return render(request, "Resultado_DB.html", {"produto": produto})
 
 def retorna_estatisticas(request):
