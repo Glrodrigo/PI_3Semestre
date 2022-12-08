@@ -28,7 +28,7 @@ def retorna_resultado(request):
     return render(request, 'Resulta_API.html')
 
 def retorna_resultadoDB(request):
-    item = request.POST['lupa']
+    item = request.POST.get('lupa', str)
     produto = Produtos.objects.all().filter(descricao__contains=item)
     return render(request, "Resultado_DB.html", {"produto": produto})
 

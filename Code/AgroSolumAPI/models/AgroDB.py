@@ -44,6 +44,14 @@ class AgroMongo:
             seeds.append([seed['semente'], seed['clicks']])
         return seeds
 
+    def list_money_info(self):
+        values = [['Renda', 'respostas']]
+        responses = ["1,00 a 1000,00 R$", "1001,00 a 3000,00 R$", "3001,00 a 7000,00 R$", "7001,00 a 15000,00 R$"]
+        for resp in responses:
+            count = self.resultados.count_documents({"value": resp})
+            values.append([resp, count])
+        return values
+
     def update_region_search(self, region: str):
         if region in self.list_region_names():
             finded = self.regioes.find_one({'Regiao':region})

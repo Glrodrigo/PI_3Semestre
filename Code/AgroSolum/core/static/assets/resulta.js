@@ -74,7 +74,7 @@ let vs8  = document.getElementById("visitVIII")
 
 async function clickSeed(seed) {
     await fetch("http://localhost:8500/api_agrosolum/update_seed_clicks", {
-        method: "POST",
+        method: "PUT",
         headers: {'Content-Type': 'application/json'}, 
         body: JSON.stringify({"seed":seed})
     })

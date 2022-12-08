@@ -13,6 +13,11 @@ def list_seed_name():
     agro = AgroMongo()
     return agro.list_seed_names()
 
+@routers_agrosolum.get('/list_money')
+def list_money(): 
+    agro = AgroMongo()
+    return agro.list_money_info()
+
 @routers_agrosolum.get('/list_regions')
 def list_regions(): 
     agro = AgroMongo()
@@ -31,14 +36,14 @@ def post_form(form: GroundInfo):
     solos = agro.verify_solum()
     return solos
 
-@routers_agrosolum.post('/update_region')
+@routers_agrosolum.put('/update_region')
 def update_region(region: Region): 
     agro = AgroMongo()
     updated = agro.update_region_search(region.region)
     print(updated)
     return updated
     
-@routers_agrosolum.post('/update_seed_clicks')
+@routers_agrosolum.put('/update_seed_clicks')
 def update_seeds(seed: Seed): 
     agro = AgroMongo()
     updated = agro.update_seeds(seed.seed)
