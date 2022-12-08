@@ -23,14 +23,10 @@ O Agrosolum se propõe a ser mais que apenas uma ferramenta de análise de solo,
 
 <h4> PÚBLICO-ALVO </h4>
 
-O projeto foi estruturado pensando em auxiliar os pequenos e médios produtores rurais, ou pessoas que desejam obter informações acerca de seu solo.
+O projeto foi estruturado pensando em auxiliar os pequenos e médios produtores rurais, ou pessoas que desejam obter informações acerca de seu solo e à empresas que desejam ter acesso e enxergar essas pessoas e seus interesses nesse mercado.
 
 <h4>REQUISITOS FUNCIONAIS</h4>
 
-- Controle de acesso:
-
-  - Realizar login;
-  - Cadastrar-se como usuário;
 - Questionário:
   - Preencher o questionário de análise do solo;
   - Receber o resultado do tipo do solo;
@@ -38,9 +34,8 @@ O projeto foi estruturado pensando em auxiliar os pequenos e médios produtores 
   - Melhores produtos da semana.
   - Produtos de acordo com o resultado da pesquisa e do questionário
 - Relatório:
-  - Gráfico geral da quantidade de questionários preenchidos e cliques nos produtos.
-  - Gráfico com os tipos de solos e vendas.
-  - Gráfico da quantidade de sementes vendidas de acordo com os tipos dos solos
+  - Gráfico com quantidade de clicks em sementes, representando maiores interesses.
+  - Gráfico com o número de requisições por região.
 
 <h4>REQUISITOS NÃO FUNCIONAIS</h4>
 
