@@ -36,6 +36,7 @@ O projeto foi estruturado pensando em auxiliar os pequenos e médios produtores 
 - Relatório:
   - Gráfico com quantidade de clicks em sementes, representando maiores interesses.
   - Gráfico com o número de requisições por região.
+  - Gráfico com o número de requisões por renda.
 
 <h4>REQUISITOS NÃO FUNCIONAIS</h4>
 

@@ -13,6 +13,11 @@ def list_seed_name():
     agro = AgroMongo()
     return agro.list_seed_names()
 
+@routers_agrosolum.get('/list_money')
+def list_money(): 
+    agro = AgroMongo()
+    return agro.list_money_info()
+
 @routers_agrosolum.get('/list_regions')
 def list_regions(): 
     agro = AgroMongo()
