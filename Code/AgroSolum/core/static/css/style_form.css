@@ -142,7 +142,7 @@ main{
 
 .data_mongo{
     background-image: url(../Images/bg-leafs.svg);
-    height: 208vh;
+    height: 300vh;
     margin: auto;
     width: 960px;
 }
