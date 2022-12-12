@@ -5,7 +5,7 @@
 <h3 align="center">AgroSolum</h3>
 
 <p align="center">
-<img src="https://github.com/paulademelo/projeto-interdisciplinar-3-Fatec-DSM/blob/main/Code/Projeto_PI3/Images/Icon.png" width="300px">
+<img src="https://github.com/Glrodrigo/PI_3Semestre/blob/main/Code/AgroSolum/core/static/Images/Icon.png" width="300px">
 <p align="center">
 
 <h4>OBJETIVO</h4>
